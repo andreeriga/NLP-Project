@@ -27,7 +27,7 @@ class SelfCorrectionVerifier(BaseVerifier):
             print(f"[INFO] Verifica della coerenza in corso...")
             print(f"[INFO] Risposta proposta da analizzare: '{answer}'")
 
-        revised = self.model.generate_response(prompt).strip()
+        revised = self.model.generate_response(prompt)['text'].strip()
         has_changed = answer.strip() != revised
         
         if is_verbose:

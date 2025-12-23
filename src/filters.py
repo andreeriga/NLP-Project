@@ -85,3 +85,24 @@ class OrFilter(FilterStrategy):
         if verbose:
             print(f"[FILTER-LOGIC] OR result per {sample.id}: {res}")
         return res
+    
+class LengthFilter(FilterStrategy):
+    """
+    Filtro per Flan-T5-small: scarta campioni che superano la capacità del modello.
+    Un margine di sicurezza è necessario perché Flan-T5-small ha un limite di 512 token.
+    """
+    def __init__(self, max_tokens: int = 450):
+        self.max_tokens = max_tokens
+
+    def is_satisfied(self, sample, verbose: bool = False) -> bool:
+        # Stima approssimativa: 1 parola circa 1.3 token
+        # Sommiamo contesto e domanda per avere il totale del prompt
+        text_to_measure = sample.full_context + " " + sample.question
+        estimated_tokens = len(text_to_measure.split()) * 1.3
+        
+        satisfied = estimated_tokens <= self.max_tokens
+        
+        if verbose and not satisfied:
+            print(f"[FILTER] LengthFilter: Scartato {sample.id} perché troppo lungo (~{int(estimated_tokens)} token)")
+            
+        return satisfied
