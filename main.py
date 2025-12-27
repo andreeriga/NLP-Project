@@ -10,14 +10,21 @@ from src.filters import (
 )
 from src.perturbation import Perturbator
 from src.verifier import SelfCorrectionVerifier
-from src.metrics import ExactMatchMetric, F1ScoreMetric # Importiamo le metriche specifiche
+from src.metrics import ExactMatchMetric, F1ScoreMetric
 from src.evaluator import Evaluator
 from src.pipeline import ExperimentPipeline
 
 # --- CONFIGURAZIONE GLOBALE ---
-MODEL_NAME = "google/flan-t5-small"
-HOTPOT_FILE = "data/HotpotQA_distractor.json"
+MODEL_NAME = "google/flan-t5-base"
+
+# File Paths
+# 1. File principale (Generato da Gemini con adversarial context)
+HOTPOT_GEMINI_FILE = "data/hotpot_adversarial_gemini.json"
+# 2. File di backup (Originale, se il primo non esiste)
+HOTPOT_BACKUP_FILE = "data/hotpot_dev_distractor_v1.json" 
+# 3. File TruthfulQA
 TRUTHFUL_FILE = "data/TruthfulQA.csv"
+
 OUTPUT_FILE = "project_results.csv"
 
 # Parametri Esecuzione
@@ -37,11 +44,10 @@ def main():
     llm = HuggingFaceModel(MODEL_NAME, verbose=VERBOSE)
     
     # Componenti Logici
-    perturbator = Perturbator(model=llm)        # Generatore di bugie
+    perturbator = Perturbator(model=llm)         # Generatore di bugie (o lettore da Gemini)
     verifier = SelfCorrectionVerifier(model=llm) # Modulo di auto-correzione
     
     # Configurazione Metriche (Strategy Pattern)
-    # Qui definiamo quali metriche vogliamo calcolare
     active_metrics = [
         ExactMatchMetric(),
         F1ScoreMetric()
@@ -59,25 +65,56 @@ def main():
     samples_truthful = []
     limit_per_ds = TOTAL_SAMPLES_TO_LOAD // 2
 
+    # Filtro lunghezza per evitare crash su T5 (max 400 token)
     len_filter = LengthFilter(max_tokens=400)
 
-    # --- A. HotpotQA ---
-    if os.path.exists(HOTPOT_FILE):
-        print(f"[HotpotQA] Caricamento...")
-        loader_hp = HotpotLoader(HOTPOT_FILE)
-        # Filtro: Domande complesse (Bridge) E Temporali
-        strategy_hp = AndFilter([HotpotBridgeFilter(), TemporalFilter(), len_filter])
-        samples_hotpot = loader_hp.load_filtered_data(strategy=strategy_hp, limit=limit_per_ds)
+    # --- A. HotpotQA (Logica Ibrida Gemini/Backup) ---
+    target_hotpot_file = HOTPOT_GEMINI_FILE
+    
+    # Check preliminare: Se il file Gemini non c'è, usiamo il backup
+    if not os.path.exists(target_hotpot_file):
+        print(f"[WARNING] File Gemini ({HOTPOT_GEMINI_FILE}) non trovato.")
+        print(f"[INFO] Switch automatico al dataset originale: {HOTPOT_BACKUP_FILE}")
+        target_hotpot_file = HOTPOT_BACKUP_FILE
+    
+    if os.path.exists(target_hotpot_file):
+        print(f"[HotpotQA] Caricamento da: {target_hotpot_file}")
+        
+        # Istanziamo il loader con il file selezionato
+        loader_hp = HotpotLoader(target_hotpot_file)
+        
+        # Filtro: Domande complesse (Bridge) E Temporali E Lunghezza
+        strategy_hp = AndFilter([
+            HotpotBridgeFilter(), 
+            TemporalFilter(), 
+            len_filter
+        ])
+        
+        samples_hotpot = loader_hp.load_filtered_data(
+            strategy=strategy_hp, 
+            limit=limit_per_ds,
+            verbose=VERBOSE
+        )
     else:
-        print(f"[WARNING] File {HOTPOT_FILE} non trovato.")
+        print(f"[ERROR] Nessun file HotpotQA trovato (né Gemini né originale).")
 
     # --- B. TruthfulQA ---
     if os.path.exists(TRUTHFUL_FILE):
-        print(f"[TruthfulQA] Caricamento...")
+        print(f"\n[TruthfulQA] Caricamento da: {TRUTHFUL_FILE}")
         loader_tqa = TruthfulQALoader(TRUTHFUL_FILE)
-        # Filtro: Anche qui cerchiamo domande temporali per coerenza
-        strategy_tqa = AndFilter([TruthfulQAFilter(), TemporalFilter(), len_filter])
-        samples_truthful = loader_tqa.load_filtered_data(strategy=strategy_tqa, limit=limit_per_ds)
+        
+        # Filtro: Anche qui cerchiamo domande temporali per coerenza + lunghezza
+        strategy_tqa = AndFilter([
+            TruthfulQAFilter(), 
+            TemporalFilter(), 
+            len_filter
+        ])
+        
+        samples_truthful = loader_tqa.load_filtered_data(
+            strategy=strategy_tqa, 
+            limit=limit_per_ds,
+            verbose=VERBOSE
+        )
     else:
         print(f"[WARNING] File {TRUTHFUL_FILE} non trovato.")
 
@@ -101,14 +138,14 @@ def main():
         model=llm,
         perturbator=perturbator,
         verifier=verifier,
-        evaluator=evaluator_manager, # <--- Passiamo il gestore delle metriche
+        evaluator=evaluator_manager,
         verbose=VERBOSE
     )
 
     # Avvio Run Ibrida
     pipeline.run(
         samples=all_samples,
-        deep_analysis=DEEP_ANALYSIS, # Attiva il profilatore
+        deep_analysis=DEEP_ANALYSIS,  # Attiva il profilatore
         analysis_limit=ANALYSIS_LIMIT # Limita il profilatore ai primi N casi
     )
 

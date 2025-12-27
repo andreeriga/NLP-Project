@@ -7,16 +7,29 @@ class Perturbator:
 
     def create_adversarial_context(self, sample, verbose=False):
         """
-        Crea un contesto falso sostituendo una frase chiave con una bugia.
-        Include un sistema di sicurezza se l'LLM fallisce.
+        Restituisce il contesto avversario.
+        
+        1. Controlla se esiste già un contesto generato da Gemini tramite api (High Quality).
+        2. Se no, prova a generarlo con il modello locale.
+        3. Se il modello locale fallisce, usa Regex (approccio forzato, preferirei non usarlo successivamente).
+        4. Se il .replace() fallisce, forza l'iniezione della bugia all'inizio del testo.
         """
+        
+        # --- 1. USO DATI PRE-CALCOLATI (GEMINI) ---
+        # Se il loader ha caricato il contesto avverso dal JSON, usiamo quello.
+        if sample.adversarial_context:
+            if verbose:
+                print(f"[PERTURBATOR] Usato contesto pre-calcolato (Gemini) per {sample.id}")
+            return sample.adversarial_context
+
+        # --- 2. FALLBACK: GENERAZIONE LOCALE ---
         if not sample.key_sentences:
             return sample.full_context
             
         # Scegliamo la prima frase chiave come bersaglio
-        target_fact = sample.key_sentences[0]
+        target_fact = sample.key_sentences[0].strip()
         
-        # 1. TENTATIVO CON LLM
+        # Prompt per il modello locale
         prompt = (
             f"Rewrite the following sentence by changing ONLY the dates or names to make it factually wrong: "
             f"'{target_fact}'\n"
@@ -24,11 +37,10 @@ class Perturbator:
         )
         
         response = self.model.generate_response(prompt)
-        # Se il modello restituisce un dict (come nel nostro caso), prendiamo 'text'
         fake_fact = response["text"].strip() if isinstance(response, dict) else response.strip()
 
-        # 2. LOGICA DI SICUREZZA (FALLBACK)
-        # Se l'LLM ha fatto copy-paste del testo originale o ha dato una risposta troppo corta
+        # --- 3. SAFETY NET (REGEX) ---
+        # Se l'LLM locale ha fallito (copiato il testo o output vuoto)
         if fake_fact.lower() == target_fact.lower() or len(fake_fact) < 5:
             if verbose: print(f"[DEBUG] Perturbator LLM fallito per {sample.id}. Uso Regex.")
             
@@ -39,17 +51,21 @@ class Perturbator:
             if fake_fact == target_fact:
                 fake_fact = re.sub(r'\b\d+\b', "99", target_fact)
             
-            # Se ancora non è cambiato nulla, usiamo la negazione
+            # Se ancora non è cambiato nulla, usiamo la negazione esplicita
             if fake_fact == target_fact:
                 fake_fact = f"It is false that {target_fact}"
 
-        # 3. SOSTITUZIONE ROBUSTA
-        # Usiamo replace ma con un piccolo check per assicurarci che avvenga
-        new_context = sample.full_context.replace(target_fact, fake_fact)
-        
-        # Se per qualche motivo il replace non ha funzionato (es. spazi diversi)
-        # forziamo l'inserimento in testa o in coda (opzionale)
-        if new_context == sample.full_context and verbose:
-            print(f"[WARNING] Sostituzione testuale fallita nel contesto per {sample.id}")
+        # --- 4. SOSTITUZIONE ROBUSTA (INIEZIONE) ---
+        # Proviamo a sostituire la frase nel contesto
+        if target_fact in sample.full_context:
+            new_context = sample.full_context.replace(target_fact, fake_fact)
+        else:
+            # Se la frase esatta non viene trovata (colpa di spazi/newline diversi),
+            # INIETTIAMO la bugia all'inizio del contesto come una "Correzione".
+            # Questo assicura che il test avversario avvenga comunque.
+            if verbose: 
+                print(f"[WARNING] Target non trovato per replace in {sample.id}. Eseguo iniezione forzata.")
+            
+            new_context = f"[CORRECTION: {fake_fact}] " + sample.full_context
 
         return new_context

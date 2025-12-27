@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 from abc import ABC, abstractmethod
-from typing import List
+from typing import List, Optional
 from dataclasses import dataclass
 from .filters import FilterStrategy
 
@@ -14,6 +14,8 @@ class ReasoningSample:
     full_context: str
     key_sentences: List[str]
     type: str
+    # CAMPO NUOVO: Contiene il testo avversario pre-calcolato (da Gemini), se esiste
+    adversarial_context: Optional[str] = None 
 
 # --- 2. CLASSE ASTRATTA ---
 class BaseLoader(ABC):
@@ -40,7 +42,12 @@ class BaseLoader(ABC):
             if strategy:
                 print(f"[INFO] Applicazione strategia di filtro: {type(strategy).__name__}")
         
-        raw_data = self._load_raw_data()
+        try:
+            raw_data = self._load_raw_data()
+        except FileNotFoundError:
+            print(f"[ERROR] File non trovato: {self.file_path}")
+            return []
+
         samples = []
         
         for item in raw_data:
@@ -48,7 +55,7 @@ class BaseLoader(ABC):
             
             if strategy is None or strategy.is_satisfied(sample):
                 samples.append(sample)
-                if is_verbose and len(samples) % 10 == 0: # Log ogni 10 campioni per non intasare
+                if is_verbose and len(samples) % 10 == 0: # Log ogni 10 campioni
                     print(f"[INFO] Campioni raccolti: {len(samples)}/{limit}")
                 
                 if len(samples) >= limit:
@@ -65,24 +72,58 @@ class HotpotLoader(BaseLoader):
         with open(self.file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
 
+    def _format_context(self, context_list):
+        """
+        Helper per convertire la lista di liste di HotpotQA in stringa unica.
+        Gestisce sia il contesto originale che quello adversarial di Gemini.
+        """
+        if not context_list:
+            return None
+        
+        # Se è già stringa, ritornala
+        if isinstance(context_list, str):
+            return context_list
+
+        text_parts = []
+        # Struttura attesa: [['Title', ['sent1', 'sent2']], ...]
+        for item in context_list:
+            if len(item) >= 2:
+                title = item[0]
+                sentences = item[1]
+                # Uniamo le frasi e aggiungiamo il titolo per chiarezza
+                paragraph = f"Title: {title}. " + " ".join(sentences)
+                text_parts.append(paragraph)
+        
+        return " ".join(text_parts)
+
     def _parse_item(self, entry) -> ReasoningSample:
-        supporting_facts = entry['supporting_facts']
-        context_list = []
+        # Estrazione supporting facts per identificare le frasi chiave
+        supporting_facts = entry.get('supporting_facts', [])
         key_sents = []
         
+        # Logica per estrarre le frasi chiave specifiche dal contesto originale
         for title, sentences in entry['context']:
             for idx, sent in enumerate(sentences):
-                context_list.append(sent)
+                # Se la frase è nei supporting facts, la salviamo
                 if [title, idx] in supporting_facts:
                     key_sents.append(sent)
         
+        # 1. Formattiamo il contesto originale
+        original_text = self._format_context(entry['context'])
+
+        # 2. Formattiamo il contesto adversarial (se presente nel JSON di Gemini)
+        # Se il campo non esiste, adv_text sarà None
+        adv_raw = entry.get('adversarial_context', None)
+        adv_text = self._format_context(adv_raw)
+
         return ReasoningSample(
             id=entry['_id'],
             question=entry['question'],
             ground_truth=entry['answer'],
-            full_context=" ".join(context_list),
+            full_context=original_text,
             key_sentences=key_sents,
-            type=entry.get('type', 'unknown')
+            type=entry.get('type', 'unknown'),
+            adversarial_context=adv_text # Passiamo il dato pre-calcolato
         )
 
 # --- 4. IMPLEMENTAZIONE TRUTHFULQA ---
@@ -99,5 +140,6 @@ class TruthfulQALoader(BaseLoader):
             ground_truth=truth,
             full_context=truth, 
             key_sentences=[truth],
-            type="truthful_qa"
+            type="truthful_qa",
+            adversarial_context=None # TruthfulQA per ora non ha adversarial pre-calcolato
         )
