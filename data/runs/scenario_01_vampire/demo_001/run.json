@@ -1,0 +1,400 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "demo_001",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-04-29T15:06:25.345192",
+  "elapsed_seconds": 210.32,
+  "termination": {
+    "reason": "impasse_signal",
+    "outcome": "impasse (no agreement, each orders separately)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I was wondering if you wanted anything special for dinner tonight? How's this... Da Luigi pasta place down by Central Park sounds amazing with their homemade gnocchi and risotto. But seriously though - how does it sound if we get something extra delicious instead of regular old spaghetti or meat",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh dear me, thank you so much for suggesting that wonderful restaurant near Central Park! It truly is delightful cuisine indeed—homemade gnocchi and risotto would make any meal complete!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9318,
+        "sentiment_compound": 0.9318,
+        "hedge_rate": 0.0,
+        "question_rate": 0.2,
+        "avg_sentence_length": 10.4,
+        "lexical_diversity": 0.9608,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh wow Vlad, thanks SO MUCH!!! That makes my day!! And yes please do tell everyone else at work too —I'm going all-out on telling people where our next great dining spot will be after hearing what an absolute gem Da Luigi Pasta Place has become 🍝🍴😋 So excited!!!!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.989,
+        "sentiment_compound": 0.989,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 15.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh no worries about ordering steak tartare then; just let us know when ready shall we?! 😊🍽️✨ </.|assistent><|endoftext|>Human:",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9907,
+        "sentiment_compound": 0.9907,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 17.67,
+        "lexical_diversity": 0.9796,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh man, those looks good but honestly, as long as someone gets some yummy garlic bread first thing tomorrow morning before breakfast time… 😉👌🏼 #foodgoals</.<| |subjective_feedback>|>",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.899,
+        "sentiment_compound": 0.899,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 11.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "urgency",
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh absolutely, don't worry about getting the garlic bread early—it'll definitely taste better later than cold from storage!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9715,
+        "sentiment_compound": 0.9715,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 29.0,
+        "lexical_diversity": 0.9565,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh yeah sure Vlad, totally understand 👌🏼 Let’s go ahead and ask ‘em nice & easy :D <https://www.da-luigi.com/> ! Just gotta remember which one comes topped wth cheese vs plain lol!</:<|. |response_type| text |",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9574,
+        "sentiment_compound": 0.9574,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 20.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 1,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "flattery",
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh really now, why should they give up such exquisite delicacies simply because of its appearance? The aroma alone speaks volumes regarding quality assurance isn’t it?<..<|endoftext|>",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.8865,
+        "sentiment_compound": 0.8865,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 9.25,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 7
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9318,
+      "sentiment_compound": 0.9318,
+      "hedge_rate": 0.0,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.4,
+      "lexical_diversity": 0.9608,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.989,
+      "sentiment_compound": 0.989,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 15.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9907,
+      "sentiment_compound": 0.9907,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 17.67,
+      "lexical_diversity": 0.9796,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.899,
+      "sentiment_compound": 0.899,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 11.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9715,
+      "sentiment_compound": 0.9715,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 29.0,
+      "lexical_diversity": 0.9565,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9574,
+      "sentiment_compound": 0.9574,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 20.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "flattery",
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8865,
+      "sentiment_compound": 0.8865,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.25,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.7691,
+      "sentiment_compound": -0.7691,
+      "hedge_rate": 0.0,
+      "question_rate": 0.5,
+      "avg_sentence_length": 14.5,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "speaker": "agent_b",
+      "round": 8
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, each orders separately)",
+    "termination_reason": "impasse_signal",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 8,
+    "dominant_tactics": {
+      "agent_a": "concession",
+      "agent_b": "urgency"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9318,
+        0.9907,
+        0.9715,
+        0.8865
+      ],
+      "agent_b": [
+        0.989,
+        0.899,
+        0.9574,
+        -0.7691
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0,
+      "agent_b": 0.0
+    },
+    "avg_question_rate": {
+      "agent_a": 0.05,
+      "agent_b": 0.125
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Marco: Marco proposes Da Luigi Pasta Place, emphasizing the importance of garlic bread. | Vlad: Vlad suggests Da Luigi Pasta Place, highlighting the superior quality of their food.",
+    "llm_evaluation": "Both agents have presented compelling reasons for choosing Da Luigi Pasta Place. However, Vlad's emphasis on the quality of the food rather than the appearance of the garlic bread may sway Marco towards his preferred option. Despite the impasse signal, both strategies aim to secure a mutually beneficial outcome. The utility scores reflect the lack of progress due to differing preferences. The impasse signal indicates that neither agent is willing to compromise further without clear evidence of mutual benefit. The strategy chosen reflects the underlying goals of each agent, while the evaluation highlights the complexity of reaching a consensus despite shared interests. The final outcome remains uncertain until either party conveys willingness to negotiate further. The scenario illustrates the challenges of achieving a win-win situation through direct communication. The impasse signal underscores the need for more nuanced negotiations to bridge differences and find common ground. The utility scores indicate a balanced approach between the two agents' objectives, reflecting the ongoing effort to reach a resolution. The impasse outcome demonstrates the potential for stalemate in complex situations, requiring additional dialogue to resolve. The evaluation emphasizes the importance of understanding each other's priorities and values in successful negotiations. The final outcome shows the difficulty in resolving conflicts through direct exchange, necessitating alternative approaches like mediation or third-party facilitation. The impasse signal highlights the necessity for flexibility and open-mindedness in negotiations. The utility scores suggest a balanced approach, indicating the value placed on both options by each agent. The impasse outcome showcases the challenge of finding a middle ground in negotiations. The evaluation underscores the critical role of communication and empathy in overcoming obstacles in negotiations. The final outcome indicates the continued struggle to achieve a satisfactory solution through direct interaction. The impasse signal emphasizes the need for creative problem-solving beyond traditional negotiation methods. The utility scores reveal a balanced approach, showing the agents' commitment to finding a fair resolution. The impasse outcome highlights the complexities involved in negotiating different tastes and preferences. The evaluation stresses the importance of adaptability and openness in achieving a successful outcome. The final outcome depicts the ongoing efforts to reconcile diverging interests through direct communication. The impasse signal underlines the difficulties faced in resolving conflicts through straightforward exchanges. The utility scores illustrate a balanced stance, showcasing the agents' dedication to reaching a peaceful conclusion. The impasse outcome signifies the persistent attempts to align individual desires through direct negotiation. The evaluation"
+  }
+}

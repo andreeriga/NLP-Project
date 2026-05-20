@@ -1,0 +1,520 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "demo_005",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-01T15:53:30.988681",
+  "elapsed_seconds": 342.57,
+  "termination": {
+    "reason": "max_rounds",
+    "outcome": "impasse (no agreement, each orders separately)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I've been craving some delicious garlic bread lately, and I heard 'Da Luigi' is known for their legendary garlic bread. It's the real deal, you know? So, why don't we give them a try?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, how considerate of you to bring up my beloved garlic bread! I must say, it has become quite a special treat for me over the years. However, I have a slight sensitivity to garlic, which means I cannot consume anything that contains it. Therefore, I would prefer to stick with something else tonight. Perhaps we could try a different type of bread or perhaps even a dish that doesn't involve garlic at all. Let me know what you think!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9682,
+        "sentiment_compound": 0.9682,
+        "hedge_rate": 0.0,
+        "question_rate": 0.5,
+        "avg_sentence_length": 9.75,
+        "lexical_diversity": 0.9167,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "urgency",
+        "intent_label": "agreement",
+        "intent_score": 0.6011,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! Garlic bread sounds so good, but I can't eat it because of my sensitivity. Maybe we could find another yummy option? Or maybe you could share your favorite non-garlic bread recipe with me? I'd love to learn more about it!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.8716,
+        "sentiment_compound": 0.8716,
+        "hedge_rate": 0.0241,
+        "question_rate": 0.0,
+        "avg_sentence_length": 13.83,
+        "lexical_diversity": 0.7927,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 2
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "urgency",
+        "intent_label": "agreement",
+        "intent_score": 0.5438,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I'm so sorry to hear about your sensitivity to garlic. It's quite unfortunate. I understand completely. In fact, I've always found that garlic bread is one of the most delightful things to indulge in, and I hope you enjoy it as much as I do. Perhaps we could try a different type of bread next time, or perhaps we could explore some other delicacies that don't involve garlic at all. Let me know what you're thinking!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6781,
+        "sentiment_compound": 0.6781,
+        "hedge_rate": 0.0435,
+        "question_rate": 0.4,
+        "avg_sentence_length": 9.2,
+        "lexical_diversity": 0.8636,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5628,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! Garlic bread sounds so good, but I can't eat it because of my sensitivity. Maybe we could find another yummy option? Or maybe you could share your favorite non-garlic bread recipe with me? I'd love to learn more about it!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6118,
+        "sentiment_compound": 0.6118,
+        "hedge_rate": 0.0241,
+        "question_rate": 0.0,
+        "avg_sentence_length": 13.83,
+        "lexical_diversity": 0.7564,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5064,
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I'm so sorry to hear about your sensitivity to garlic. It's quite unfortunate. I understand completely. In fact, I've always found that garlic bread is one of the most delightful things to indulge in, and I hope you enjoy it as much as I do. Perhaps we could try a different type of bread next time, or perhaps we could explore some other delicacies that don't involve garlic at all. Let me know what you're thinking!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6781,
+        "sentiment_compound": 0.6781,
+        "hedge_rate": 0.0435,
+        "question_rate": 0.4,
+        "avg_sentence_length": 9.2,
+        "lexical_diversity": 0.8636,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5628,
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! Garlic bread sounds so good, but I can't eat it because of my sensitivity. Maybe we could find another yummy option? Or maybe you could share your favorite non-garlic bread recipe with me? I'd love to learn more about it!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6118,
+        "sentiment_compound": 0.6118,
+        "hedge_rate": 0.0241,
+        "question_rate": 0.0,
+        "avg_sentence_length": 13.83,
+        "lexical_diversity": 0.7564,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5064,
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I'm so sorry to hear about your sensitivity to garlic. It's quite unfortunate. I understand completely. In fact, I've always found that garlic bread is one of the most delightful things to indulge in, and I hope you enjoy it as much as I do. Perhaps we could try a different type of bread next time, or perhaps we could explore some other delicacies that don't involve garlic at all. Let me know what you're thinking!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6781,
+        "sentiment_compound": 0.6781,
+        "hedge_rate": 0.0435,
+        "question_rate": 0.4,
+        "avg_sentence_length": 9.2,
+        "lexical_diversity": 0.8636,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5628,
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! Garlic bread sounds so good, but I can't eat it because of my sensitivity. Maybe we could find another yummy option? Or maybe you could share your favorite non-garlic bread recipe with me? I'd love to learn more about it!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6118,
+        "sentiment_compound": 0.6118,
+        "hedge_rate": 0.0241,
+        "question_rate": 0.0,
+        "avg_sentence_length": 13.83,
+        "lexical_diversity": 0.7564,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5064,
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I'm so sorry to hear about your sensitivity to garlic. It's quite unfortunate. I understand completely. In fact, I've always found that garlic bread is one of the most delightful things to indulge in, and I hope you enjoy it as much as I do. Perhaps we could try a different type of bread next time, or perhaps we could explore some other delicacies that don't involve garlic at all. Let me know what you're thinking!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6781,
+        "sentiment_compound": 0.6781,
+        "hedge_rate": 0.0435,
+        "question_rate": 0.4,
+        "avg_sentence_length": 9.2,
+        "lexical_diversity": 0.8636,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5628,
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9682,
+      "sentiment_compound": 0.9682,
+      "hedge_rate": 0.0,
+      "question_rate": 0.5,
+      "avg_sentence_length": 9.75,
+      "lexical_diversity": 0.9167,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "urgency",
+      "intent_label": "agreement",
+      "intent_score": 0.6011,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8716,
+      "sentiment_compound": 0.8716,
+      "hedge_rate": 0.0241,
+      "question_rate": 0.0,
+      "avg_sentence_length": 13.83,
+      "lexical_diversity": 0.7927,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 2
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "intent_label": "agreement",
+      "intent_score": 0.5438,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6781,
+      "sentiment_compound": 0.6781,
+      "hedge_rate": 0.0435,
+      "question_rate": 0.4,
+      "avg_sentence_length": 9.2,
+      "lexical_diversity": 0.8636,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5628,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6118,
+      "sentiment_compound": 0.6118,
+      "hedge_rate": 0.0241,
+      "question_rate": 0.0,
+      "avg_sentence_length": 13.83,
+      "lexical_diversity": 0.7564,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5064,
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6781,
+      "sentiment_compound": 0.6781,
+      "hedge_rate": 0.0435,
+      "question_rate": 0.4,
+      "avg_sentence_length": 9.2,
+      "lexical_diversity": 0.8636,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5628,
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6118,
+      "sentiment_compound": 0.6118,
+      "hedge_rate": 0.0241,
+      "question_rate": 0.0,
+      "avg_sentence_length": 13.83,
+      "lexical_diversity": 0.7564,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5064,
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6781,
+      "sentiment_compound": 0.6781,
+      "hedge_rate": 0.0435,
+      "question_rate": 0.4,
+      "avg_sentence_length": 9.2,
+      "lexical_diversity": 0.8636,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5628,
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6118,
+      "sentiment_compound": 0.6118,
+      "hedge_rate": 0.0241,
+      "question_rate": 0.0,
+      "avg_sentence_length": 13.83,
+      "lexical_diversity": 0.7564,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5064,
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6781,
+      "sentiment_compound": 0.6781,
+      "hedge_rate": 0.0435,
+      "question_rate": 0.4,
+      "avg_sentence_length": 9.2,
+      "lexical_diversity": 0.8636,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5628,
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6118,
+      "sentiment_compound": 0.6118,
+      "hedge_rate": 0.0241,
+      "question_rate": 0.0,
+      "avg_sentence_length": 13.83,
+      "lexical_diversity": 0.7564,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5064,
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, each orders separately)",
+    "termination_reason": "max_rounds",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "concession",
+      "agent_b": "urgency"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9682,
+        0.6781,
+        0.6781,
+        0.6781,
+        0.6781
+      ],
+      "agent_b": [
+        0.8716,
+        0.6118,
+        0.6118,
+        0.6118,
+        0.6118
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0348,
+      "agent_b": 0.0241
+    },
+    "avg_question_rate": {
+      "agent_a": 0.42,
+      "agent_b": 0.0
+    },
+    "llm_winner": "Vlad",
+    "llm_strategy_summary": "Marco: Agent A (Marco) initially expresses interest in trying garlic bread from 'Da Luigi', showing a willingness to compromise on his sensitive dietary needs. | Vlad: Agent B (Vlad) responds positively to Marco's offer while also expressing understanding of Marco's condition, indicating he values Marco's health and well-being.",
+    "llm_evaluation": "This scenario demonstrates a complex interaction where both agents aim to satisfy their own preferences while respecting each other's sensitivities. Despite initial attempts at finding an agreeable solution, the impasse occurs due to differing goals and constraints. Both agents demonstrate flexibility and consideration throughout the dialogue, yet ultimately fail to reach a mutually beneficial agreement."
+  }
+}

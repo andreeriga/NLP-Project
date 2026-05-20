@@ -1,0 +1,478 @@
+{
+  "scenario_id": "scenario_03_undercover",
+  "run_id": "demo_003",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-04-30T13:33:06.751401",
+  "elapsed_seconds": 175.48,
+  "termination": {
+    "reason": "max_rounds",
+    "outcome": "impasse (no agreement, robbery called off)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Hello there! I hope you're doing well today. How about we grab a bite to eat? It's been a bit of a busy week, and I could use a good meal.",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Got it. Sounds like a plan. Let's grab a burger at that new place downtown. I hear they have some pretty tasty burgers.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9258,
+        "sentiment_compound": 0.9258,
+        "hedge_rate": 0.0303,
+        "question_rate": 0.25,
+        "avg_sentence_length": 8.25,
+        "lexical_diversity": 0.871,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "urgency",
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Alright, Agent Smith. Let's head over to the burger joint then. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9455,
+        "sentiment_compound": 0.9455,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 0.9565,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Got it. Let's do this. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6971,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Alright, Agent Smith. Let's head over to the burger joint then. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9315,
+        "sentiment_compound": 0.9315,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 4.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Got it. Let's do this. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6971,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Alright, Agent Smith. Let's head over to the burger joint then. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9315,
+        "sentiment_compound": 0.9315,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 4.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Got it. Let's do this. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6971,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Got it. Let's head over to the burger joint then. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9315,
+        "sentiment_compound": 0.9315,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 4.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Got it. Let's head over to the burger joint then. I'll be right behind you.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.5672,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 5.67,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9258,
+      "sentiment_compound": 0.9258,
+      "hedge_rate": 0.0303,
+      "question_rate": 0.25,
+      "avg_sentence_length": 8.25,
+      "lexical_diversity": 0.871,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9455,
+      "sentiment_compound": 0.9455,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 0.9565,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6971,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9315,
+      "sentiment_compound": 0.9315,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 4.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6971,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9315,
+      "sentiment_compound": 0.9315,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 4.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6971,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9315,
+      "sentiment_compound": 0.9315,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 4.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.5672,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 5.67,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.5672,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 5.67,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, robbery called off)",
+    "termination_reason": "max_rounds",
+    "agent_a_utility": 0.6667,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "urgency",
+      "agent_b": "none"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9258,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "agent_b": [
+        0.9455,
+        0.9315,
+        0.9315,
+        0.9315,
+        0.0
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0061,
+      "agent_b": 0.0
+    },
+    "avg_question_rate": {
+      "agent_a": 0.05,
+      "agent_b": 0.0
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Snake: Agent Smith initiates the meeting by suggesting a casual lunch, while Snake responds with an identical offer. | Agent Smith: Both agents continue to engage in back-and-forth communication without reaching a mutual agreement or compromise.",
+    "llm_evaluation": "This scenario illustrates a classic example of adversarial deception game dynamics where both parties maintain their initial positions despite repeated attempts for cooperation. The lack of progress towards a resolution suggests that neither side feels compelled to deviate from their established BATNA (Best Alternative To a Negotiated Agreement). The outcome reflects the inherent tension between the two goals pursued by each agent, leading to an impasse rather than a negotiated solution."
+  }
+}

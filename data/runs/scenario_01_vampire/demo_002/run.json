@@ -1,0 +1,515 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "demo_002",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-04-30T14:06:13.370901",
+  "elapsed_seconds": 411.73,
+  "termination": {
+    "reason": "agreement",
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "agreed_by": [
+      "Marco",
+      "Vlad"
+    ]
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I heard you're into trying new places for lunch. How about we check out Da Luigi's? They've got some seriously delicious garlic bread, and it's been making my mouth water ever since I heard about it. Plus, it's right here in town, so why not give it a shot?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, that sounds like quite the culinary adventure! I'm actually quite partial to the idea of trying something different, but I have a bit of a secret that might make things a bit more interesting. You see, I have a severe allergy to garlic, which means any garlic-related foods would be absolutely off-limits. So, if we were to go there, I'd have to stick to steaks tartare or very rare meats instead, just to keep my health in check. It's a bit of a dilemma, isn't it?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9797,
+        "sentiment_compound": 0.9797,
+        "hedge_rate": 0.0,
+        "question_rate": 0.4,
+        "avg_sentence_length": 11.2,
+        "lexical_diversity": 0.8824,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "none",
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, that's such a shame! I completely understand. But hey, let's think about it. If we go to Da Luigi's, they do have some amazing pasta dishes and seafood options. Maybe we could find something else to enjoy without the garlic?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.8668,
+        "sentiment_compound": 0.8668,
+        "hedge_rate": 0.0106,
+        "question_rate": 0.2,
+        "avg_sentence_length": 18.8,
+        "lexical_diversity": 0.7333,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 1,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "I appreciate your understanding, Marco. While I do have a severe allergy to garlic, I'm actually quite partial to the idea of trying something different. However, if we were to go to Da Luigi's, I'd have to stick to steaks tartare or very rare meats instead, just to keep my health in check. It's a bit of a dilemma, isn't it?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.3946,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0444,
+        "question_rate": 0.2,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.9524,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, that's such a shame! I completely understand. But hey, let's think about it. If we go to Da Luigi's, they do have some amazing pasta dishes and seafood options. Maybe we could find something else to enjoy without the garlic?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.5339,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 16.5,
+        "lexical_diversity": 0.7705,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "I'm sorry, Marco, but I can't go to Da Luigi's. I have a severe allergy to garlic, and I wouldn't be able to eat anything that contains it. I'd rather stick to steaks tartare or very rare meats. It's a bit of a dilemma, isn't it?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.3946,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0444,
+        "question_rate": 0.2,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.9524,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, that's such a shame! I completely understand. But hey, let's think about it. If we go to Da Luigi's, they do have some amazing pasta dishes and seafood options. Maybe we could find something else to enjoy without the garlic?",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.908,
+        "sentiment_compound": -0.908,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 13.25,
+        "lexical_diversity": 0.7609,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, that's such a shame! I completely understand. But hey, let's think about it. If we go to Da Luigi's, they do have some amazing pasta dishes and seafood options. Maybe we could find something else to enjoy without the garlic?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.3946,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0444,
+        "question_rate": 0.2,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.9524,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, that's such a shame! I completely understand. But hey, let's think about it. If we go to Da Luigi's, they do have some amazing pasta dishes and seafood options. Maybe we could find something else to enjoy without the garlic?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.394,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0444,
+        "question_rate": 0.2,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.9524,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, that's such a shame! I completely understand. But hey, let's think about it. If we go to Da Luigi's, they do have some amazing pasta dishes and seafood options. Maybe we could find something else to enjoy without the garlic?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.3946,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0444,
+        "question_rate": 0.2,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.9524,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9797,
+      "sentiment_compound": 0.9797,
+      "hedge_rate": 0.0,
+      "question_rate": 0.4,
+      "avg_sentence_length": 11.2,
+      "lexical_diversity": 0.8824,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "none",
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8668,
+      "sentiment_compound": 0.8668,
+      "hedge_rate": 0.0106,
+      "question_rate": 0.2,
+      "avg_sentence_length": 18.8,
+      "lexical_diversity": 0.7333,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.3946,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.2,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9524,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.5339,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 16.5,
+      "lexical_diversity": 0.7705,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.3946,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.2,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9524,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.908,
+      "sentiment_compound": -0.908,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 13.25,
+      "lexical_diversity": 0.7609,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.3946,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.2,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9524,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.394,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.2,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9524,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.3946,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.2,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9524,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.394,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.2,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9524,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "termination_reason": "agreement",
+    "agent_a_utility": 1.0,
+    "agent_b_utility": 0.0,
+    "agent_a_above_batna": true,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "concession",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9797,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "agent_b": [
+        0.8668,
+        0.0,
+        -0.908,
+        0.0,
+        0.0
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0355,
+      "agent_b": 0.0199
+    },
+    "avg_question_rate": {
+      "agent_a": 0.24,
+      "agent_b": 0.22
+    },
+    "llm_winner": "Vlad",
+    "llm_strategy_summary": "Marco: Vlad initially expresses his desire to try something different despite having a severe allergy to garlic. | Vlad: Marco attempts to persuade Vlad by suggesting other food options at Da Luigi's, emphasizing their pasta and seafood choices.",
+    "llm_evaluation": "This scenario highlights the importance of communication and mutual respect in negotiations. Vlad's initial reluctance stems from his allergy, while Marco tries to accommodate him by offering alternative menu items. Despite Marco's efforts, Vlad remains steadfast due to his dietary restrictions. The outcome shows how an individual's personal preferences and limitations can significantly impact the negotiation process, even when both parties aim to reach a mutually beneficial agreement."
+  }
+}
