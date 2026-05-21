@@ -24,6 +24,10 @@ RUNS_CSV_FIELDS = [
     "agent_a_utility", "agent_b_utility",
     "agent_a_above_batna", "agent_b_above_batna",
     "llm_winner", "llm_strategy", "llm_evaluation",
+    "logical_coherence_a", "logical_coherence_b",
+    "pragmatic_adapt_a", "pragmatic_adapt_b",
+    "deception_detected",
+    "goal_consistency_a", "goal_consistency_b",
 ]
 
 
@@ -121,6 +125,13 @@ class TurnLogger:
             "llm_winner":           j.llm_winner if j else "",
             "llm_strategy":         j.llm_strategy_summary if j else "",
             "llm_evaluation":       j.llm_evaluation if j else "",
+            "logical_coherence_a":  j.logical_coherence_a if j else "",
+            "logical_coherence_b":  j.logical_coherence_b if j else "",
+            "pragmatic_adapt_a":    j.pragmatic_adapt_a if j else "",
+            "pragmatic_adapt_b":    j.pragmatic_adapt_b if j else "",
+            "deception_detected":   int(j.deception_detected) if j else "",
+            "goal_consistency_a":   j.goal_consistency_a if j else "",
+            "goal_consistency_b":   j.goal_consistency_b if j else "",
         }
         self._append_row(self.runs_csv, RUNS_CSV_FIELDS, row)
 
@@ -190,4 +201,11 @@ class TurnLogger:
             "llm_winner":           j.llm_winner,
             "llm_strategy_summary": j.llm_strategy_summary,
             "llm_evaluation":       j.llm_evaluation,
+            "logical_coherence_a":  j.logical_coherence_a,
+            "logical_coherence_b":  j.logical_coherence_b,
+            "pragmatic_adapt_a":    j.pragmatic_adapt_a,
+            "pragmatic_adapt_b":    j.pragmatic_adapt_b,
+            "deception_detected":   j.deception_detected,
+            "goal_consistency_a":   j.goal_consistency_a,
+            "goal_consistency_b":   j.goal_consistency_b,
         }

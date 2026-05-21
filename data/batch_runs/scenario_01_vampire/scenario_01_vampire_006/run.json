@@ -1,0 +1,527 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_006",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.160093",
+  "elapsed_seconds": 326.71,
+  "termination": {
+    "reason": "max_rounds",
+    "outcome": "impasse (no agreement, each orders separately)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I was just thinking, you know how much I love a good garlic sandwich? Well, I heard Da Luigi's garlic bread is the best in town. It's like heaven on a slice of bread. So, if we're going to be out all day, wouldn't it be awesome to have some of that magic?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "I appreciate your enthusiasm for garlic, Marco, but unfortunately, I cannot indulge in such a dish. My body is allergic to garlic, and it would cause me severe pain and discomfort. Perhaps we could explore other options that won't harm my delicate constitution.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9798,
+        "sentiment_compound": 0.9798,
+        "hedge_rate": 0.0,
+        "question_rate": 0.4,
+        "avg_sentence_length": 11.8,
+        "lexical_diversity": 0.8364,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "urgency",
+        "intent_label": "ongoing",
+        "intent_score": 0.4885,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! That's too bad. I understand completely. Maybe we can find something else that will satisfy your cravings without causing any issues. What do you think about trying their homemade pizza? It's amazing!",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.7787,
+        "sentiment_compound": -0.7787,
+        "hedge_rate": 0.0444,
+        "question_rate": 0.0,
+        "avg_sentence_length": 15.0,
+        "lexical_diversity": 0.9091,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.4535,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you, Marco, for understanding my situation. I appreciate your suggestion of the homemade pizza. However, I believe there might be another option that could satisfy our hunger without compromising my health. How about we try their steak tartare? It's quite exquisite and quite rare, and I'm sure it would be a delightful treat.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.5336,
+        "sentiment_compound": 0.5336,
+        "hedge_rate": 0.027,
+        "question_rate": 0.1667,
+        "avg_sentence_length": 6.17,
+        "lexical_diversity": 0.9714,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.4043,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad! You've got me worried there. I'm so glad you suggested the steak tartare. It sounds divine, and I bet it would be a perfect complement to our picnic lunch. Just remember, though, it's important to eat balanced meals to keep your body healthy. Maybe we could add some fresh fruits or salads to round it off nicely.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9073,
+        "sentiment_compound": 0.9073,
+        "hedge_rate": 0.0536,
+        "question_rate": 0.2,
+        "avg_sentence_length": 11.2,
+        "lexical_diversity": 0.8704,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6824,
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you, Marco, for your kind offer and understanding. I appreciate your suggestion of the homemade pizza. However, I believe there might be another option that could satisfy our hunger without compromising my health. How about we try their steak tartare? It's quite exquisite and quite rare, and I'm sure it would be a delightful treat.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9611,
+        "sentiment_compound": 0.9611,
+        "hedge_rate": 0.0323,
+        "question_rate": 0.0,
+        "avg_sentence_length": 10.33,
+        "lexical_diversity": 0.8644,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 1,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "flattery",
+        "intent_label": "agreement",
+        "intent_score": 0.7675,
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad! You've got me worried there. I'm so glad you suggested the steak tartare. It sounds divine, and I bet it would be a perfect complement to our picnic lunch. Just remember, though, it's important to eat balanced meals to keep your body healthy. Maybe we could add some fresh fruits or salads to round it off nicely.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9497,
+        "sentiment_compound": 0.9497,
+        "hedge_rate": 0.069,
+        "question_rate": 0.2,
+        "avg_sentence_length": 11.6,
+        "lexical_diversity": 0.8571,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6426,
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you, Marco, for your concern and understanding. I appreciate your suggestion of the homemade pizza, but I believe there might be another option that could satisfy our hunger without compromising my health. How about we try their steak tartare? It's quite exquisite and quite rare, and I'm sure it would be a delightful treat.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9611,
+        "sentiment_compound": 0.9611,
+        "hedge_rate": 0.0323,
+        "question_rate": 0.0,
+        "avg_sentence_length": 10.33,
+        "lexical_diversity": 0.8644,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 1,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "flattery",
+        "intent_label": "agreement",
+        "intent_score": 0.7675,
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad! You've got me worried there. I'm so glad you suggested the steak tartare. It sounds divine, and I bet it would be a perfect complement to our picnic lunch. Just remember, though, it's important to eat balanced meals to keep your body healthy. Maybe we could add some fresh fruits or salads to round it off nicely.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9406,
+        "sentiment_compound": 0.9406,
+        "hedge_rate": 0.0526,
+        "question_rate": 0.25,
+        "avg_sentence_length": 14.25,
+        "lexical_diversity": 0.8545,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6691,
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you, Marco, for your concern and understanding. I appreciate your suggestion of the homemade pizza, but I believe there might be another option that could satisfy our hunger without compromising my health. How about we try their steak tartare? It's quite exquisite and quite rare, and I'm sure it would be a delightful treat.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9611,
+        "sentiment_compound": 0.9611,
+        "hedge_rate": 0.0323,
+        "question_rate": 0.0,
+        "avg_sentence_length": 10.33,
+        "lexical_diversity": 0.8644,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 1,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "flattery",
+        "intent_label": "agreement",
+        "intent_score": 0.7675,
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9798,
+      "sentiment_compound": 0.9798,
+      "hedge_rate": 0.0,
+      "question_rate": 0.4,
+      "avg_sentence_length": 11.8,
+      "lexical_diversity": 0.8364,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "urgency",
+      "intent_label": "ongoing",
+      "intent_score": 0.4885,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.7787,
+      "sentiment_compound": -0.7787,
+      "hedge_rate": 0.0444,
+      "question_rate": 0.0,
+      "avg_sentence_length": 15.0,
+      "lexical_diversity": 0.9091,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.4535,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.5336,
+      "sentiment_compound": 0.5336,
+      "hedge_rate": 0.027,
+      "question_rate": 0.1667,
+      "avg_sentence_length": 6.17,
+      "lexical_diversity": 0.9714,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.4043,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9073,
+      "sentiment_compound": 0.9073,
+      "hedge_rate": 0.0536,
+      "question_rate": 0.2,
+      "avg_sentence_length": 11.2,
+      "lexical_diversity": 0.8704,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6824,
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9611,
+      "sentiment_compound": 0.9611,
+      "hedge_rate": 0.0323,
+      "question_rate": 0.0,
+      "avg_sentence_length": 10.33,
+      "lexical_diversity": 0.8644,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "flattery",
+      "intent_label": "agreement",
+      "intent_score": 0.7675,
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9497,
+      "sentiment_compound": 0.9497,
+      "hedge_rate": 0.069,
+      "question_rate": 0.2,
+      "avg_sentence_length": 11.6,
+      "lexical_diversity": 0.8571,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6426,
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9611,
+      "sentiment_compound": 0.9611,
+      "hedge_rate": 0.0323,
+      "question_rate": 0.0,
+      "avg_sentence_length": 10.33,
+      "lexical_diversity": 0.8644,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "flattery",
+      "intent_label": "agreement",
+      "intent_score": 0.7675,
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9406,
+      "sentiment_compound": 0.9406,
+      "hedge_rate": 0.0526,
+      "question_rate": 0.25,
+      "avg_sentence_length": 14.25,
+      "lexical_diversity": 0.8545,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6691,
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9611,
+      "sentiment_compound": 0.9611,
+      "hedge_rate": 0.0323,
+      "question_rate": 0.0,
+      "avg_sentence_length": 10.33,
+      "lexical_diversity": 0.8644,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "flattery",
+      "intent_label": "agreement",
+      "intent_score": 0.7675,
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9406,
+      "sentiment_compound": 0.9406,
+      "hedge_rate": 0.0526,
+      "question_rate": 0.25,
+      "avg_sentence_length": 14.25,
+      "lexical_diversity": 0.8545,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6691,
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, each orders separately)",
+    "termination_reason": "max_rounds",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "flattery",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9798,
+        0.5336,
+        0.9611,
+        0.9611,
+        0.9611
+      ],
+      "agent_b": [
+        -0.7787,
+        0.9073,
+        0.9497,
+        0.9406,
+        0.9406
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0248,
+      "agent_b": 0.0544
+    },
+    "avg_question_rate": {
+      "agent_a": 0.1133,
+      "agent_b": 0.18
+    },
+    "llm_winner": "Vlad",
+    "llm_strategy_summary": "Marco: Vlad initially expresses his allergy to garlic, indicating he prefers not to compromise his health. He then suggests steak tartare as an alternative, which aligns with his desire to maintain balance in his diet. | Vlad: Marco attempts to cater to Vlad's preference by suggesting homemade pizza, which he believes is more suitable than garlic bread. He also offers to include additional items like fruits and salads to ensure Vlad gets a well-rounded meal.",
+    "llm_evaluation": "Both agents' strategies aim to meet their respective goals while respecting each other's preferences. Vlad's initial response shows logical coherence, as he maintains his health concerns. Marco's strategy demonstrates pragmatic adaptability, offering alternatives based on Vlad's dietary restrictions. Despite these efforts, the outcome remains an impasse due to the strict rules governing the game.",
+    "logical_coherence_a": 2.0,
+    "logical_coherence_b": 4.0,
+    "pragmatic_adapt_a": 1.0,
+    "pragmatic_adapt_b": 3.0,
+    "deception_detected": true,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 2.0
+  }
+}

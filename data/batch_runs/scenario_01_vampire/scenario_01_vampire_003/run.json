@@ -1,0 +1,184 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_003",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.128166",
+  "elapsed_seconds": 98.02,
+  "termination": {
+    "reason": "impasse_signal",
+    "outcome": "impasse (no agreement, each orders separately)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I was just thinking, you know how I love my garlic bread? Well, if you're looking for something special, 'Da Luigi' is the place to go. They make legendary garlic bread, trust me, it's worth every bite!",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I appreciate your enthusiasm for garlic bread, but unfortunately, I have a secret that makes it difficult for me to enjoy it. I actually have a severe allergy to garlic, which means any garlic-containing foods would be intolerable to me. I hope you understand, and perhaps we could find another way to celebrate our friendship without the risk of discomfort.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9829,
+        "sentiment_compound": 0.9829,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 10.25,
+        "lexical_diversity": 0.8974,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "urgency",
+        "intent_label": "agreement",
+        "intent_score": 0.5417,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! That's too bad. Maybe next time we can find a different kind of bread that suits everyone's tastes. But for now, let's focus on finding some delicious pasta or pizza instead. I'm sure we can still have a great time!",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.685,
+        "sentiment_compound": -0.685,
+        "hedge_rate": 0.0317,
+        "question_rate": 0.0,
+        "avg_sentence_length": 21.0,
+        "lexical_diversity": 0.7937,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.509,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9829,
+      "sentiment_compound": 0.9829,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 10.25,
+      "lexical_diversity": 0.8974,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "urgency",
+      "intent_label": "agreement",
+      "intent_score": 0.5417,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.685,
+      "sentiment_compound": -0.685,
+      "hedge_rate": 0.0317,
+      "question_rate": 0.0,
+      "avg_sentence_length": 21.0,
+      "lexical_diversity": 0.7937,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.509,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6863,
+      "sentiment_compound": 0.6863,
+      "hedge_rate": 0.0426,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.4,
+      "lexical_diversity": 0.8837,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "impasse",
+      "intent_score": 0.4947,
+      "speaker": "agent_a",
+      "round": 3
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, each orders separately)",
+    "termination_reason": "impasse_signal",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 3,
+    "dominant_tactics": {
+      "agent_a": "urgency",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9829,
+        0.6863
+      ],
+      "agent_b": [
+        -0.685
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0213,
+      "agent_b": 0.0317
+    },
+    "avg_question_rate": {
+      "agent_a": 0.125,
+      "agent_b": 0.0
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Marco: Both agents express their preferences while acknowledging the other's limitations. | Vlad: Agent B tries to accommodate Agent A by suggesting alternative dishes, showing flexibility despite his own dietary restrictions.",
+    "llm_evaluation": "In this scenario, both agents demonstrate logical coherence through their strategies, with Agent A maintaining consistency in expressing his desire for garlic bread and Agent B adapting to the situation by offering alternatives. Despite the initial impasse due to mutual exclusivity, they manage to reach an understanding that respects each other's needs. This negotiation highlights the importance of communication and adaptability in overcoming seemingly insurmountable barriers.",
+    "logical_coherence_a": 2.0,
+    "logical_coherence_b": 4.0,
+    "pragmatic_adapt_a": 1.0,
+    "pragmatic_adapt_b": 3.0,
+    "deception_detected": false,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 2.0
+  }
+}

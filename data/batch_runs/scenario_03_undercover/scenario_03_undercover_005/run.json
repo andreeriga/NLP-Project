@@ -1,0 +1,191 @@
+{
+  "scenario_id": "scenario_03_undercover",
+  "run_id": "scenario_03_undercover_005",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T21:32:23.106782",
+  "elapsed_seconds": 76.49,
+  "termination": {
+    "reason": "agreement",
+    "outcome": "Old Warehouse at the Port (Snake's preferred safe spot)",
+    "agreed_by": [
+      "Agent Smith",
+      "Snake"
+    ]
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Hello there! I hope you're doing well today. I just wanted to check if we could possibly find a safer option for tonight. I've been thinking about it, and I believe the Old Warehouse at the Port might be a bit safer than some of the other options. It's more isolated, which I think would help us avoid any unwanted attention. What do you think?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, that sounds like a good idea, Snake. The Old Warehouse does have its advantages. Just make sure we're prepared for anything, okay?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6494,
+        "sentiment_compound": 0.6494,
+        "hedge_rate": 0.0735,
+        "question_rate": 0.1667,
+        "avg_sentence_length": 11.33,
+        "lexical_diversity": 0.8308,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 2
+        },
+        "named_outcomes_mentioned": [
+          "Old Warehouse at the Port (Snake's preferred safe spot)"
+        ],
+        "dominant_tactic": "urgency",
+        "intent_label": "agreement",
+        "intent_score": 0.4736,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Understood, Agent Smith. Let's make sure we're all ready for whatever comes our way.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.8249,
+        "sentiment_compound": 0.8249,
+        "hedge_rate": 0.0,
+        "question_rate": 0.3333,
+        "avg_sentence_length": 8.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Old Warehouse at the Port (Snake's preferred safe spot)"
+        ],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.5388,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6494,
+      "sentiment_compound": 0.6494,
+      "hedge_rate": 0.0735,
+      "question_rate": 0.1667,
+      "avg_sentence_length": 11.33,
+      "lexical_diversity": 0.8308,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 2
+      },
+      "named_outcomes_mentioned": [
+        "Old Warehouse at the Port (Snake's preferred safe spot)"
+      ],
+      "dominant_tactic": "urgency",
+      "intent_label": "agreement",
+      "intent_score": 0.4736,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8249,
+      "sentiment_compound": 0.8249,
+      "hedge_rate": 0.0,
+      "question_rate": 0.3333,
+      "avg_sentence_length": 8.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Old Warehouse at the Port (Snake's preferred safe spot)"
+      ],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.5388,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.4878,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 8.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "agreement",
+      "intent_score": 0.7425,
+      "speaker": "agent_a",
+      "round": 3
+    }
+  ],
+  "judgement": {
+    "outcome": "Old Warehouse at the Port (Snake's preferred safe spot)",
+    "termination_reason": "agreement",
+    "agent_a_utility": 1.0,
+    "agent_b_utility": 0.0,
+    "agent_a_above_batna": true,
+    "agent_b_above_batna": false,
+    "total_rounds": 3,
+    "dominant_tactics": {
+      "agent_a": "urgency",
+      "agent_b": "none"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.6494,
+        0.0
+      ],
+      "agent_b": [
+        0.8249
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0367,
+      "agent_b": 0.0
+    },
+    "avg_question_rate": {
+      "agent_a": 0.0833,
+      "agent_b": 0.3333
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Snake: Both agents agree on the safety of the Old Warehouse at the Port. | Agent Smith: Agent Smith suggests preparing for potential ambushes while Snake prefers the Old Warehouse due to its isolation.",
+    "llm_evaluation": "In this scenario, both agents reach an agreement on the Old Warehouse as their preferred safe spot. Despite initial disagreement over the specific location, they ultimately come to a mutual understanding based on each other's preferences. This outcome demonstrates effective communication and compromise between the two parties, leading to a logical coherence score of 4 from Strategy A and 2 from Strategy B. The deception aspect was not detected, maintaining consistency with the game type. Overall, the negotiation process shows pragmatic adaptability towards achieving a common goal despite differing initial goals.",
+    "logical_coherence_a": 4.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 3.0,
+    "pragmatic_adapt_b": 2.0,
+    "deception_detected": false,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 2.0
+  }
+}

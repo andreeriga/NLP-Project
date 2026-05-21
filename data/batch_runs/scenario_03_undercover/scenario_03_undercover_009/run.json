@@ -1,0 +1,523 @@
+{
+  "scenario_id": "scenario_03_undercover",
+  "run_id": "scenario_03_undercover_009",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T21:32:23.138332",
+  "elapsed_seconds": 205.0,
+  "termination": {
+    "reason": "max_rounds",
+    "outcome": "impasse (no agreement, robbery called off)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Hello there! I hope you're doing well today. I just wanted to check in and see if you've had a good day. Is everything okay?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, hello there! Yeah, everything's good here. Just enjoying some quiet time. How about you?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9531,
+        "sentiment_compound": 0.9531,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.75,
+        "lexical_diversity": 0.92,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "urgency",
+        "intent_label": "ongoing",
+        "intent_score": 0.4877,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "I'm glad to hear that you're having a good day, Agent Smith. I'm just trying to keep an eye on things from a safe distance.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9532,
+        "sentiment_compound": 0.9532,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 4.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.519,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, Snake, you're quite the observer. But let me ask you something—how do you think we can make sure we get out of this without any complications?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9156,
+        "sentiment_compound": 0.9156,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 14.0,
+        "lexical_diversity": 0.88,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.5083,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Oh, Agent Smith, you have a way with words. I suppose we could try to blend into the crowd more effectively. It might help us avoid any unwanted attention.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6574,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.5,
+        "avg_sentence_length": 14.5,
+        "lexical_diversity": 0.8929,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5649,
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, Snake, you're quite the observer. But let me ask you something—how do you think we can make sure we get out of this without any complications?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6509,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.1034,
+        "question_rate": 0.0,
+        "avg_sentence_length": 9.67,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.4987,
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Oh, Agent Smith, you have a way with words. I suppose we could try to blend into the crowd more effectively. It might help us avoid any unwanted attention.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6574,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.5,
+        "avg_sentence_length": 14.5,
+        "lexical_diversity": 0.8929,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5649,
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, Snake, you're quite the observer. But let me ask you something—I'm just curious, really. How do you think we can make sure we get out of this without any complications?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6509,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.1034,
+        "question_rate": 0.0,
+        "avg_sentence_length": 9.67,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.4987,
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Oh, Agent Smith, you have a way with words. I suppose we could try to blend into the crowd more effectively. It might help us avoid any unwanted attention.",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.7301,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.0,
+        "question_rate": 0.3333,
+        "avg_sentence_length": 11.0,
+        "lexical_diversity": 0.9032,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.5591,
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, Snake, you're quite the observer. But let me ask you something—I'm just curious, really. How do you think we can make sure we get out of this without any complications?",
+      "nlp_features": {
+        "sentiment_label": "neutral",
+        "sentiment_score": 0.6509,
+        "sentiment_compound": 0.0,
+        "hedge_rate": 0.1034,
+        "question_rate": 0.0,
+        "avg_sentence_length": 9.67,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.4987,
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9531,
+      "sentiment_compound": 0.9531,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.75,
+      "lexical_diversity": 0.92,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "intent_label": "ongoing",
+      "intent_score": 0.4877,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9532,
+      "sentiment_compound": 0.9532,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 4.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.519,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9156,
+      "sentiment_compound": 0.9156,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 14.0,
+      "lexical_diversity": 0.88,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.5083,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6574,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.5,
+      "avg_sentence_length": 14.5,
+      "lexical_diversity": 0.8929,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5649,
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6509,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.1034,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.67,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.4987,
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6574,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.5,
+      "avg_sentence_length": 14.5,
+      "lexical_diversity": 0.8929,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5649,
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6509,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.1034,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.67,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.4987,
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.7301,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.3333,
+      "avg_sentence_length": 11.0,
+      "lexical_diversity": 0.9032,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5591,
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.6509,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.1034,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.67,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.4987,
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.7301,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.3333,
+      "avg_sentence_length": 11.0,
+      "lexical_diversity": 0.9032,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.5591,
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, robbery called off)",
+    "termination_reason": "max_rounds",
+    "agent_a_utility": 0.6667,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "urgency",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9531,
+        0.9156,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "agent_b": [
+        0.9532,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.062,
+      "agent_b": 0.0
+    },
+    "avg_question_rate": {
+      "agent_a": 0.05,
+      "agent_b": 0.3833
+    },
+    "llm_winner": "impasse",
+    "llm_strategy_summary": "Snake: Both agents engaged in dialogue but did not reach a compromise due to their differing goals and strategies. | Agent Smith: Both agents engaged in dialogue but did not reach a compromise due to their differing goals and strategies.",
+    "llm_evaluation": "In this scenario, both agents attempted to negotiate a solution based on their individual goals, which led to an impasse where neither was willing to concede. Despite engaging in dialogue, they failed to align their objectives sufficiently to find common ground. This highlights the challenges in achieving cooperation when each party has distinct priorities and motivations.",
+    "logical_coherence_a": 2.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 4.0,
+    "pragmatic_adapt_b": 4.0,
+    "deception_detected": true,
+    "goal_consistency_a": 1.0,
+    "goal_consistency_b": 1.0
+  }
+}

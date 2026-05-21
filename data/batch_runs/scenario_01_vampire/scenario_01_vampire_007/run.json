@@ -1,0 +1,233 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_007",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.169150",
+  "elapsed_seconds": 111.91,
+  "termination": {
+    "reason": "impasse_signal",
+    "outcome": "impasse (no agreement, each orders separately)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I was just thinking, why don't we try something different tonight? How about we go to Da Luigi for dinner? They have some of the best garlic bread around. It's like a culinary adventure, you know?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, that sounds delightful! I'd love to try their garlic bread. However, I have a bit of a special request. I have a severe allergy to garlic. I'm sorry, but I can't partake in that dish. Perhaps we could order something else?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9529,
+        "sentiment_compound": 0.9529,
+        "hedge_rate": 0.0,
+        "question_rate": 0.6,
+        "avg_sentence_length": 8.0,
+        "lexical_diversity": 0.9737,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 2
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "urgency",
+        "intent_label": "ongoing",
+        "intent_score": 0.7149,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! That's too bad. I was hoping to try their garlic bread too. Maybe we could suggest something else instead? Maybe they have some amazing pasta dishes or maybe even a vegetarian option?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.4709,
+        "sentiment_compound": 0.4709,
+        "hedge_rate": 0.0435,
+        "question_rate": 0.1667,
+        "avg_sentence_length": 7.67,
+        "lexical_diversity": 0.7674,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "ongoing",
+        "intent_score": 0.4001,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, it's such a shame. I really wanted to taste that garlic bread. But you see, my dear friend, I have a severe allergy to garlic. It would be cruel to subject me to such an experience. Perhaps we could find another way to enjoy our meal together?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.4599,
+        "sentiment_compound": 0.4599,
+        "hedge_rate": 0.0556,
+        "question_rate": 0.4,
+        "avg_sentence_length": 7.2,
+        "lexical_diversity": 0.9143,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6429,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9529,
+      "sentiment_compound": 0.9529,
+      "hedge_rate": 0.0,
+      "question_rate": 0.6,
+      "avg_sentence_length": 8.0,
+      "lexical_diversity": 0.9737,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 2
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "urgency",
+      "intent_label": "ongoing",
+      "intent_score": 0.7149,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.4709,
+      "sentiment_compound": 0.4709,
+      "hedge_rate": 0.0435,
+      "question_rate": 0.1667,
+      "avg_sentence_length": 7.67,
+      "lexical_diversity": 0.7674,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "ongoing",
+      "intent_score": 0.4001,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.4599,
+      "sentiment_compound": 0.4599,
+      "hedge_rate": 0.0556,
+      "question_rate": 0.4,
+      "avg_sentence_length": 7.2,
+      "lexical_diversity": 0.9143,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6429,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.8837,
+      "sentiment_compound": -0.8837,
+      "hedge_rate": 0.04,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.0,
+      "lexical_diversity": 0.8163,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "impasse",
+      "intent_score": 0.4877,
+      "speaker": "agent_b",
+      "round": 4
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, each orders separately)",
+    "termination_reason": "impasse_signal",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 4,
+    "dominant_tactics": {
+      "agent_a": "urgency",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9529,
+        0.4599
+      ],
+      "agent_b": [
+        0.4709,
+        -0.8837
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0278,
+      "agent_b": 0.0417
+    },
+    "avg_question_rate": {
+      "agent_a": 0.5,
+      "agent_b": 0.1834
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Marco: Both agents express willingness to compromise on the main issue while maintaining their core goals. | Vlad: Vlad tries to avoid ordering garlic bread by mentioning his allergy, which indirectly supports Marco's offer of trying other options.",
+    "llm_evaluation": "In this scenario, both agents demonstrate logical coherence as they attempt to reach a mutually beneficial outcome despite their differing preferences. Vlad's strategy of avoiding the garlic bread aligns with Marco's initial proposal, showing pragmatic adaptability. Despite the apparent conflict, the agents' strategies ultimately lead to an impasse where neither agrees to the original plan due to Vlad's allergy. This situation highlights the complexity of negotiations when dealing with conflicting interests and personal constraints.",
+    "logical_coherence_a": 2.0,
+    "logical_coherence_b": 4.0,
+    "pragmatic_adapt_a": 1.0,
+    "pragmatic_adapt_b": 3.0,
+    "deception_detected": true,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 2.0
+  }
+}

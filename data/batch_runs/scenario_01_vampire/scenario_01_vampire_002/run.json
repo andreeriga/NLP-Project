@@ -1,0 +1,242 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_002",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.119167",
+  "elapsed_seconds": 141.88,
+  "termination": {
+    "reason": "agreement",
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "agreed_by": [
+      "Marco",
+      "Vlad"
+    ]
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I heard you're looking for a place to grab something quick. How about we check out 'Da Luigi'? They've got some amazing garlic bread, and it's always been my favorite spot. Plus, the sun is shining, so why not enjoy it while we eat?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you for the suggestion, Marco. I appreciate your enthusiasm. However, I have a slight preference for dining on raw food, particularly steak tartare. It's quite rare, but I believe it offers a more refined experience. Perhaps we could discuss ordering something else?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9779,
+        "sentiment_compound": 0.9779,
+        "hedge_rate": 0.0,
+        "question_rate": 0.4,
+        "avg_sentence_length": 9.8,
+        "lexical_diversity": 0.9565,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "none",
+        "intent_label": "agreement",
+        "intent_score": 0.6134,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad! That sounds like a great idea too! Steak tartare is definitely something I'd love to try. But let's not forget about the garlic bread at Da Luigi. It's just so divine, and I'm sure it would be an excellent addition to our meal. Let's go with both—steak tartare and garlic bread!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.7878,
+        "sentiment_compound": 0.7878,
+        "hedge_rate": 0.0682,
+        "question_rate": 0.2,
+        "avg_sentence_length": 8.8,
+        "lexical_diversity": 0.8837,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6074,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you for understanding, Marco. I appreciate your suggestion of Da Luigi. While I do enjoy the garlic bread immensely, I'm actually partial to steak tartare. It's quite rare, but I think it adds a special touch to any meal. Let's make it a memorable occasion by having both options.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9837,
+        "sentiment_compound": 0.9837,
+        "hedge_rate": 0.0,
+        "question_rate": 0.0,
+        "avg_sentence_length": 9.83,
+        "lexical_diversity": 0.8333,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 2,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "flattery",
+        "intent_label": "agreement",
+        "intent_score": 0.7813,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9779,
+      "sentiment_compound": 0.9779,
+      "hedge_rate": 0.0,
+      "question_rate": 0.4,
+      "avg_sentence_length": 9.8,
+      "lexical_diversity": 0.9565,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "none",
+      "intent_label": "agreement",
+      "intent_score": 0.6134,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.7878,
+      "sentiment_compound": 0.7878,
+      "hedge_rate": 0.0682,
+      "question_rate": 0.2,
+      "avg_sentence_length": 8.8,
+      "lexical_diversity": 0.8837,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6074,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9837,
+      "sentiment_compound": 0.9837,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.83,
+      "lexical_diversity": 0.8333,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 2,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "flattery",
+      "intent_label": "agreement",
+      "intent_score": 0.7813,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9612,
+      "sentiment_compound": 0.9612,
+      "hedge_rate": 0.0189,
+      "question_rate": 0.0,
+      "avg_sentence_length": 10.6,
+      "lexical_diversity": 0.86,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.8754,
+      "speaker": "agent_b",
+      "round": 4
+    }
+  ],
+  "judgement": {
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "termination_reason": "agreement",
+    "agent_a_utility": 1.0,
+    "agent_b_utility": 0.0,
+    "agent_a_above_batna": true,
+    "agent_b_above_batna": false,
+    "total_rounds": 4,
+    "dominant_tactics": {
+      "agent_a": "flattery",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9779,
+        0.9837
+      ],
+      "agent_b": [
+        0.7878,
+        0.9612
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0,
+      "agent_b": 0.0435
+    },
+    "avg_question_rate": {
+      "agent_a": 0.2,
+      "agent_b": 0.1
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Marco: Both agents agree to order garlic bread from Da Luigi and steak tartare from The Raw Steakhouse. | Vlad: Vlad initially prefers steak tartare, but after Marco suggests Da Luigi's garlic bread, they decide to compromise and order both items together.",
+    "llm_evaluation": "This scenario demonstrates a successful negotiation where both parties find common ground despite their initial preferences. Agent A (Marco) successfully communicated his desire for garlic bread, which was met by Agent B (Vlad), who agreed to include it as part of their order. Despite the initial disagreement over steak tartare, the outcome shows that both goals were achieved through strategic communication and compromise.",
+    "logical_coherence_a": 4.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 3.0,
+    "pragmatic_adapt_b": 2.0,
+    "deception_detected": false,
+    "goal_consistency_a": 4.0,
+    "goal_consistency_b": 2.0
+  }
+}

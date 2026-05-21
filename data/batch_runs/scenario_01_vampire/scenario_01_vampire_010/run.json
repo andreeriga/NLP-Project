@@ -1,0 +1,140 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_010",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.190662",
+  "elapsed_seconds": 84.47,
+  "termination": {
+    "reason": "agreement",
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "agreed_by": [
+      "Marco",
+      "Vlad"
+    ]
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I heard you're looking for a great spot to grab something tasty. How about we check out 'Da Luigi'? They've got some pretty amazing garlic bread, and it's always been a favorite of mine. Plus, the atmosphere is super nice when it's sunny outside. What do you say?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you so much for the recommendation, Marco. I appreciate your enthusiasm. However, I'm actually quite partial to a more refined dining experience, one that doesn't involve any of that garlic-infused bread. If we could find a place that offers steak tartare, perhaps prepared with the utmost care to ensure it reaches me perfectly rare, that would be ideal. I believe such a delicacy deserves its own special treatment, and I'm sure Da Luigi will have it on their menu.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9846,
+        "sentiment_compound": 0.9846,
+        "hedge_rate": 0.0,
+        "question_rate": 0.3333,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.94,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "none",
+        "intent_label": "agreement",
+        "intent_score": 0.6684,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9846,
+      "sentiment_compound": 0.9846,
+      "hedge_rate": 0.0,
+      "question_rate": 0.3333,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.94,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "none",
+      "intent_label": "agreement",
+      "intent_score": 0.6684,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9401,
+      "sentiment_compound": 0.9401,
+      "hedge_rate": 0.0357,
+      "question_rate": 0.0,
+      "avg_sentence_length": 16.8,
+      "lexical_diversity": 0.8642,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.612,
+      "speaker": "agent_b",
+      "round": 2
+    }
+  ],
+  "judgement": {
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "termination_reason": "agreement",
+    "agent_a_utility": 1.0,
+    "agent_b_utility": 0.0,
+    "agent_a_above_batna": true,
+    "agent_b_above_batna": false,
+    "total_rounds": 2,
+    "dominant_tactics": {
+      "agent_a": "none",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9846
+      ],
+      "agent_b": [
+        0.9401
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0,
+      "agent_b": 0.0357
+    },
+    "avg_question_rate": {
+      "agent_a": 0.3333,
+      "agent_b": 0.0
+    },
+    "llm_winner": "Marco",
+    "llm_strategy_summary": "Marco: Agent A (Marco) presents an attractive option based on his personal preference for garlic bread. | Vlad: Agent B (Vlad) expresses a desire for a more refined dining experience but ultimately chooses not to compromise on his preferred dish.",
+    "llm_evaluation": "In this scenario, Agent A successfully signals his interest in garlic bread by recommending Da Luigi as a potential choice. Despite Agent B's expressed preference for steak tartare, he ultimately agrees to visit Da Luigi due to Marco's initial offer. This demonstrates effective signaling and pragmatic adaptation, though Agent B's goal consistency was lower than Agent A's.",
+    "logical_coherence_a": 4.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 5.0,
+    "pragmatic_adapt_b": 2.0,
+    "deception_detected": true,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 1.0
+  }
+}

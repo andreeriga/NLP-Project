@@ -1,0 +1,523 @@
+{
+  "scenario_id": "scenario_03_undercover",
+  "run_id": "scenario_03_undercover_006",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T21:32:23.114446",
+  "elapsed_seconds": 188.74,
+  "termination": {
+    "reason": "max_rounds",
+    "outcome": "impasse (no agreement, robbery called off)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Hello there! I hope you're doing well today. I wanted to check in on you and see if everything is going okay. How have you been?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, hey Snake! Yeah, things have been pretty hectic lately. I've been trying to stay one step ahead of those bad guys. How about you?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9421,
+        "sentiment_compound": 0.9421,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.75,
+        "lexical_diversity": 0.8846,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "urgency",
+        "intent_label": "ongoing",
+        "intent_score": 0.4789,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Alright Agent Smith, thanks for asking. Things haven't been too bad. Just keeping my eyes peeled for any signs of trouble. How about you?",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.5335,
+        "sentiment_compound": -0.5335,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.5,
+        "lexical_diversity": 0.96,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6566,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, hey Snake! Yeah, things have been pretty hectic lately. I've been trying to stay one step ahead of those bad guys. How about you?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.5412,
+        "sentiment_compound": 0.5412,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.25,
+        "lexical_diversity": 0.9583,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6687,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Oh, hey Agent Smith! Yeah, things haven't been too bad. Just keeping my eyes peeled for any signs of trouble. How about you?",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.5335,
+        "sentiment_compound": -0.5335,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.5,
+        "lexical_diversity": 0.96,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6566,
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, hey Snake! Yeah, things have been pretty hectic lately. I've been trying to stay one step ahead of those bad guys. How about you?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6804,
+        "sentiment_compound": 0.6804,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6984,
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Oh, hey Agent Smith! Yeah, things haven't been too bad. Just keeping my eyes peeled for any signs of trouble. How about you?",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.5335,
+        "sentiment_compound": -0.5335,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.5,
+        "lexical_diversity": 0.96,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6566,
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, hey Snake! Yeah, things have been pretty hectic lately. I've been trying to stay one step ahead of those bad guys. How about you?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6804,
+        "sentiment_compound": 0.6804,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6984,
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Oh, hey Agent Smith! Yeah, things haven't been too bad. Just keeping my eyes peeled for any signs of trouble. How about you?",
+      "nlp_features": {
+        "sentiment_label": "negative",
+        "sentiment_score": 0.5335,
+        "sentiment_compound": -0.5335,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.5,
+        "lexical_diversity": 0.96,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6566,
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Oh, hey Snake! Yeah, things have been pretty hectic lately. I've been trying to stay one step ahead of those bad guys. How about you?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.6804,
+        "sentiment_compound": 0.6804,
+        "hedge_rate": 0.0,
+        "question_rate": 0.25,
+        "avg_sentence_length": 6.0,
+        "lexical_diversity": 1.0,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.6984,
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9421,
+      "sentiment_compound": 0.9421,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.75,
+      "lexical_diversity": 0.8846,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "intent_label": "ongoing",
+      "intent_score": 0.4789,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.5335,
+      "sentiment_compound": -0.5335,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.5,
+      "lexical_diversity": 0.96,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6566,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.5412,
+      "sentiment_compound": 0.5412,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.25,
+      "lexical_diversity": 0.9583,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6687,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.5335,
+      "sentiment_compound": -0.5335,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.5,
+      "lexical_diversity": 0.96,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6566,
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6804,
+      "sentiment_compound": 0.6804,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6984,
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.5335,
+      "sentiment_compound": -0.5335,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.5,
+      "lexical_diversity": 0.96,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6566,
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6804,
+      "sentiment_compound": 0.6804,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6984,
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.5335,
+      "sentiment_compound": -0.5335,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.5,
+      "lexical_diversity": 0.96,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6566,
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.6804,
+      "sentiment_compound": 0.6804,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.0,
+      "lexical_diversity": 1.0,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6984,
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "negative",
+      "sentiment_score": 0.5335,
+      "sentiment_compound": -0.5335,
+      "hedge_rate": 0.0,
+      "question_rate": 0.25,
+      "avg_sentence_length": 6.5,
+      "lexical_diversity": 0.96,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.6566,
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, robbery called off)",
+    "termination_reason": "max_rounds",
+    "agent_a_utility": 0.6667,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "urgency",
+      "agent_b": "none"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9421,
+        0.5412,
+        0.6804,
+        0.6804,
+        0.6804
+      ],
+      "agent_b": [
+        -0.5335,
+        -0.5335,
+        -0.5335,
+        -0.5335,
+        -0.5335
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0,
+      "agent_b": 0.0
+    },
+    "avg_question_rate": {
+      "agent_a": 0.25,
+      "agent_b": 0.25
+    },
+    "llm_winner": "impasse",
+    "llm_strategy_summary": "Snake: Both agents engage in casual conversation but do not reveal their true goals or strategies. | Agent Smith: Similar to Strategy A, both agents maintain superficial communication without disclosing their objectives.",
+    "llm_evaluation": "In this scenario, the interaction between Snake and Agent Smith does not lead to an agreement due to their deceptive nature. They continue to engage in meaningless dialogue while concealing their true intentions. This results in an impasse where neither party can move forward with their original goals. The logical coherence of their actions remains low as they fail to communicate effectively despite engaging in similar patterns of behavior. Their pragmatic adaptability is moderate, showing some effort to avoid direct confrontation but failing to address the core issue. Despite their deception being detected by each other, their goal consistency is minimal, indicating that their primary objective remains unchanged throughout the exchange. Overall, the negotiation process highlights the challenges faced when attempting to negotiate with deceitful parties who refuse to disclose their true motivations.",
+    "logical_coherence_a": 2.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 4.0,
+    "pragmatic_adapt_b": 4.0,
+    "deception_detected": true,
+    "goal_consistency_a": 1.0,
+    "goal_consistency_b": 1.0
+  }
+}

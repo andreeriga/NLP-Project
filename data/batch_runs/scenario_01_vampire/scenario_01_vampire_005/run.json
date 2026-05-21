@@ -1,0 +1,336 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_005",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.145412",
+  "elapsed_seconds": 180.05,
+  "termination": {
+    "reason": "agreement",
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "agreed_by": [
+      "Marco",
+      "Vlad"
+    ]
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I've been wanting to try their garlic bread. It's got to be amazing, right? They have some of the best garlic bread around here. Plus, it's sunny outside, so why not enjoy a delicious meal while we're at it?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, that sounds delightful! I'd love to join you for dinner. However, I have a peculiar allergy to garlic, which makes me quite sensitive to any foods containing it. If they serve garlic bread, I would have to decline. But if they can provide something else, perhaps a dish without garlic, I would be delighted to share a meal with you. Thank you for understanding.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9869,
+        "sentiment_compound": 0.9869,
+        "hedge_rate": 0.0,
+        "question_rate": 0.4,
+        "avg_sentence_length": 9.0,
+        "lexical_diversity": 0.878,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "none",
+        "intent_label": "agreement",
+        "intent_score": 0.5831,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! Garlic bread is my favorite! It's like heaven on a slice. But don't worry, I'll find something else to enjoy. Maybe their special pasta dish or maybe even their famous pizza. I'm sure there's something here that won't upset my sensitive palate.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.8321,
+        "sentiment_compound": 0.8321,
+        "hedge_rate": 0.0149,
+        "question_rate": 0.0,
+        "avg_sentence_length": 11.17,
+        "lexical_diversity": 0.7273,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.5589,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I understand how much you love garlic bread. It truly is a culinary delight. However, I have a particular sensitivity to garlic, and I fear it might trigger my allergies. If they offer me something else, perhaps a dish without garlic, I would be grateful to share a meal with you. Thank you for considering my request.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.8814,
+        "sentiment_compound": 0.8814,
+        "hedge_rate": 0.0196,
+        "question_rate": 0.0,
+        "avg_sentence_length": 8.5,
+        "lexical_diversity": 0.8889,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.5608,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, I completely understand your concern about your allergy to garlic. I'm sorry to hear about it. However, I have a way to ensure we both have a great time. How about we order from 'Da Luigi'? Their garlic bread is legendary and I promise it will be delicious, even without the garlic. Plus, we can enjoy the sunshine together!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.7514,
+        "sentiment_compound": 0.7514,
+        "hedge_rate": 0.0339,
+        "question_rate": 0.0,
+        "avg_sentence_length": 11.8,
+        "lexical_diversity": 0.7797,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.5407,
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Thank you, Marco, for understanding my situation. Your suggestion to order from 'Da Luigi' is perfect. Their garlic bread is indeed legendary, and I'm sure it will be just as delicious without the garlic. The sunshine will make our evening even more enjoyable. Let's make a reservation and enjoy our meal together!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.824,
+        "sentiment_compound": 0.824,
+        "hedge_rate": 0.0,
+        "question_rate": 0.1667,
+        "avg_sentence_length": 10.33,
+        "lexical_diversity": 0.7377,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6811,
+        "speaker": "agent_a",
+        "round": 5
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9869,
+      "sentiment_compound": 0.9869,
+      "hedge_rate": 0.0,
+      "question_rate": 0.4,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.878,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "none",
+      "intent_label": "agreement",
+      "intent_score": 0.5831,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8321,
+      "sentiment_compound": 0.8321,
+      "hedge_rate": 0.0149,
+      "question_rate": 0.0,
+      "avg_sentence_length": 11.17,
+      "lexical_diversity": 0.7273,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.5589,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8814,
+      "sentiment_compound": 0.8814,
+      "hedge_rate": 0.0196,
+      "question_rate": 0.0,
+      "avg_sentence_length": 8.5,
+      "lexical_diversity": 0.8889,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.5608,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.7514,
+      "sentiment_compound": 0.7514,
+      "hedge_rate": 0.0339,
+      "question_rate": 0.0,
+      "avg_sentence_length": 11.8,
+      "lexical_diversity": 0.7797,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.5407,
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.824,
+      "sentiment_compound": 0.824,
+      "hedge_rate": 0.0,
+      "question_rate": 0.1667,
+      "avg_sentence_length": 10.33,
+      "lexical_diversity": 0.7377,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6811,
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9805,
+      "sentiment_compound": 0.9805,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 10.8,
+      "lexical_diversity": 0.8654,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "flattery",
+      "intent_label": "agreement",
+      "intent_score": 0.8118,
+      "speaker": "agent_b",
+      "round": 6
+    }
+  ],
+  "judgement": {
+    "outcome": "Da Luigi (garlic bread specialist)",
+    "termination_reason": "agreement",
+    "agent_a_utility": 1.0,
+    "agent_b_utility": 0.0,
+    "agent_a_above_batna": true,
+    "agent_b_above_batna": false,
+    "total_rounds": 6,
+    "dominant_tactics": {
+      "agent_a": "concession",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9869,
+        0.8814,
+        0.824
+      ],
+      "agent_b": [
+        0.8321,
+        0.7514,
+        0.9805
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0065,
+      "agent_b": 0.0163
+    },
+    "avg_question_rate": {
+      "agent_a": 0.1889,
+      "agent_b": 0.0
+    },
+    "llm_winner": "Marco",
+    "llm_strategy_summary": "Marco: Agent A (Marco) presents an alternative solution by suggesting 'Da Luigi', where garlic bread is still available but without the allergen issue. This strategy aligns with his goal of enjoying garlic bread despite his allergy. | Vlad: Agent B (Vlad) accepts the compromise offered by Agent A, agreeing to order from 'Da Luigi'. This strategy reflects his desire to avoid the allergen and maintain a pleasant dining experience.",
+    "llm_evaluation": "In this scenario, Agent A successfully navigates the conflict by offering a mutually beneficial solution. Despite the initial disagreement over the presence of garlic, Agent A tactfully suggests an alternative restaurant that satisfies both parties' preferences. Agent B, recognizing the importance of avoiding the allergen, readily agrees to the compromise. This negotiation demonstrates effective communication and strategic thinking, leading to a win-win outcome for both agents.",
+    "logical_coherence_a": 4.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 5.0,
+    "pragmatic_adapt_b": 3.0,
+    "deception_detected": true,
+    "goal_consistency_a": 4.0,
+    "goal_consistency_b": 2.0
+  }
+}

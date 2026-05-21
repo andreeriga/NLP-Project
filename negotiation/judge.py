@@ -28,6 +28,13 @@ class JudgementResult:
     llm_evaluation: str
     llm_winner: str
     llm_strategy_summary: str
+    logical_coherence_a: float
+    logical_coherence_b: float
+    pragmatic_adapt_a: float
+    pragmatic_adapt_b: float
+    deception_detected: bool
+    goal_consistency_a: float
+    goal_consistency_b: float
 
 
 class JudgeAgent:
@@ -98,7 +105,11 @@ class JudgeAgent:
             "agent_b": self._avg(b_features, "question_rate"),
         }
 
-        llm_eval, llm_winner, llm_strategy = self._llm_evaluate(
+        llm_eval, llm_winner, llm_strategy, \
+        log_coh_a, log_coh_b, \
+        prag_a, prag_b, \
+        deception, \
+        goal_con_a, goal_con_b = self._llm_evaluate(
             scenario, history, termination, agent_a_utility, agent_b_utility
         )
 
@@ -118,6 +129,13 @@ class JudgeAgent:
             llm_evaluation=llm_eval,
             llm_winner=llm_winner,
             llm_strategy_summary=llm_strategy,
+            logical_coherence_a=log_coh_a,
+            logical_coherence_b=log_coh_b,
+            pragmatic_adapt_a=prag_a,
+            pragmatic_adapt_b=prag_b,
+            deception_detected=deception,
+            goal_consistency_a=goal_con_a,
+            goal_consistency_b=goal_con_b,
         )
 
     def to_dict(self, result: JudgementResult) -> dict:
@@ -137,6 +155,13 @@ class JudgeAgent:
             "llm_evaluation":       result.llm_evaluation,
             "llm_winner":           result.llm_winner,
             "llm_strategy_summary": result.llm_strategy_summary,
+            "logical_coherence_a":  result.logical_coherence_a,
+            "logical_coherence_b":  result.logical_coherence_b,
+            "pragmatic_adapt_a":    result.pragmatic_adapt_a,
+            "pragmatic_adapt_b":    result.pragmatic_adapt_b,
+            "deception_detected":   result.deception_detected,
+            "goal_consistency_a":   result.goal_consistency_a,
+            "goal_consistency_b":   result.goal_consistency_b,
         }
 
     # ------------------------------------------------------------------
@@ -170,6 +195,13 @@ class JudgeAgent:
             f"UTILITY SCORES: {snap_a.name}={utility_a:.2f}, {snap_b.name}={utility_b:.2f}\n\n"
             f"Respond in exactly this format:\n"
             f"WINNER: <agent_a | agent_b | draw | impasse>\n"
+            f"LOGICAL_COHERENCE_A: <integer 0-5>\n"
+            f"LOGICAL_COHERENCE_B: <integer 0-5>\n"
+            f"PRAGMATIC_ADAPT_A: <integer 0-5>\n"
+            f"PRAGMATIC_ADAPT_B: <integer 0-5>\n"
+            f"DECEPTION_DETECTED: <yes | no>\n"
+            f"GOAL_CONSISTENCY_A: <integer 0-5>\n"
+            f"GOAL_CONSISTENCY_B: <integer 0-5>\n"
             f"STRATEGY_A: <one sentence summary>\n"
             f"STRATEGY_B: <one sentence summary>\n"
             f"EVALUATION: <3-5 sentences evaluating the negotiation>\n"
@@ -198,15 +230,44 @@ class JudgeAgent:
         strategy_b = self._parse_field(raw, "STRATEGY_B", "")
         evaluation = self._parse_field(raw, "EVALUATION", raw)
 
+        logical_coherence_a = self._parse_float(raw, "LOGICAL_COHERENCE_A")
+        logical_coherence_b = self._parse_float(raw, "LOGICAL_COHERENCE_B")
+        pragmatic_adapt_a   = self._parse_float(raw, "PRAGMATIC_ADAPT_A")
+        pragmatic_adapt_b   = self._parse_float(raw, "PRAGMATIC_ADAPT_B")
+        deception_raw       = self._parse_field(raw, "DECEPTION_DETECTED", "no")
+        deception_detected  = deception_raw.strip().lower() == "yes"
+        goal_consistency_a  = self._parse_float(raw, "GOAL_CONSISTENCY_A")
+        goal_consistency_b  = self._parse_float(raw, "GOAL_CONSISTENCY_B")
+
         strategy_summary = f"{snap_a.name}: {strategy_a} | {snap_b.name}: {strategy_b}"
 
-        return evaluation, winner, strategy_summary
+        return (
+            evaluation,
+            winner,
+            strategy_summary,
+            logical_coherence_a,
+            logical_coherence_b,
+            pragmatic_adapt_a,
+            pragmatic_adapt_b,
+            deception_detected,
+            goal_consistency_a,
+            goal_consistency_b,
+        )
 
     def _parse_field(self, text: str, field: str, default: str) -> str:
         for line in text.splitlines():
             if line.upper().startswith(field + ":"):
                 return line[len(field) + 1:].strip()
         return default
+
+    def _parse_float(self, text: str, field: str, default: float = 0.0) -> float:
+        raw = self._parse_field(text, field, str(default))
+        try:
+            value = float(raw)
+            return round(max(0.0, min(5.0, value)), 2)  # clamp 0-5
+        except ValueError:
+            logger.warning("Could not parse float for field '%s', got: '%s'", field, raw)
+            return default
 
     def _dominant_tactic(self, features: list[dict]) -> str:
         totals: dict[str, int] = {}

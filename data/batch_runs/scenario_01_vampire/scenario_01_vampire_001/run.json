@@ -1,0 +1,527 @@
+{
+  "scenario_id": "scenario_01_vampire",
+  "run_id": "scenario_01_vampire_001",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T20:24:28.079508",
+  "elapsed_seconds": 319.48,
+  "termination": {
+    "reason": "max_rounds",
+    "outcome": "impasse (no agreement, each orders separately)",
+    "agreed_by": []
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Hey there! I've been craving some delicious garlic bread lately, and I heard Da Luigi's is the best place for it. They've got some of the most amazing garlic bread you'll ever taste, and I can't wait to try it. Plus, it's right here in the sun, so it's perfect for me. What do you say? Should we go get some?",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, that sounds delightful! I must admit, I've always had a bit of a sweet tooth, but I'm quite fond of garlic bread as well. However, I have a slight allergy to garlic, which makes it difficult for me to enjoy it. Perhaps we could find something else to share that suits both of our tastes?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9866,
+        "sentiment_compound": 0.9866,
+        "hedge_rate": 0.0,
+        "question_rate": 0.3333,
+        "avg_sentence_length": 11.33,
+        "lexical_diversity": 0.7705,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 1,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Da Luigi (garlic bread specialist)"
+        ],
+        "dominant_tactic": "flattery",
+        "intent_label": "agreement",
+        "intent_score": 0.5501,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh no, Vlad! Garlic bread is my weakness, and I can't resist it! But don't worry; I'll find something else to share with you. Maybe we could split an appetizer or a salad instead. It's all good, isn't it?",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9202,
+        "sentiment_compound": 0.9202,
+        "hedge_rate": 0.0339,
+        "question_rate": 0.25,
+        "avg_sentence_length": 14.75,
+        "lexical_diversity": 0.7895,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6541,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    },
+    {
+      "round": 4,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, you know how much I appreciate your enthusiasm! I must confess, I have a slight allergy to garlic, which makes it difficult for me to indulge in garlic bread. However, I'm quite fond of the aroma and the texture of garlic itself. Perhaps we could share some steak tartare, which is quite rare and delicious, or perhaps even a small piece of very rare beef? It would be a treat for both of us!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.5669,
+        "sentiment_compound": 0.5669,
+        "hedge_rate": 0.0455,
+        "question_rate": 0.2,
+        "avg_sentence_length": 8.8,
+        "lexical_diversity": 0.8974,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.45,
+        "speaker": "agent_a",
+        "round": 3
+      }
+    },
+    {
+      "round": 5,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, I understand completely! Garlic bread is such a guilty pleasure for me. But I promise, I won't let it ruin our meal. How about we split a small portion of the steak tartare? It's so rare and delicious, and I bet you'd love it too!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9135,
+        "sentiment_compound": 0.9135,
+        "hedge_rate": 0.026,
+        "question_rate": 0.2,
+        "avg_sentence_length": 15.4,
+        "lexical_diversity": 0.75,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.596,
+        "speaker": "agent_b",
+        "round": 4
+      }
+    },
+    {
+      "round": 6,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, you know how much I appreciate your enthusiasm! I must confess, I have a slight allergy to garlic, which makes it difficult for me to indulge in garlic bread. However, I'm quite fond of the aroma and the texture of garlic itself. Perhaps we could share some steak tartare, which is quite rare and delicious, or perhaps even a small piece of very rare beef? It would be a treat for both of us!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9061,
+        "sentiment_compound": 0.9061,
+        "hedge_rate": 0.0,
+        "question_rate": 0.2,
+        "avg_sentence_length": 10.0,
+        "lexical_diversity": 0.8511,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6798,
+        "speaker": "agent_a",
+        "round": 5
+      }
+    },
+    {
+      "round": 7,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, I understand completely! Garlic bread is such a guilty pleasure for me. But I promise, I won't let it ruin our meal. How about we split a small portion of the steak tartare? It's so rare and delicious, and I bet you'd love it too!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9135,
+        "sentiment_compound": 0.9135,
+        "hedge_rate": 0.026,
+        "question_rate": 0.2,
+        "avg_sentence_length": 15.4,
+        "lexical_diversity": 0.75,
+        "persuasion_tactics": {
+          "concession": 1,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.596,
+        "speaker": "agent_b",
+        "round": 6
+      }
+    },
+    {
+      "round": 8,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I understand completely! Garlic bread is such a guilty pleasure for me. But I promise, I won't let it ruin our meal. How about we split a small portion of the steak tartare? It's so rare and delicious, and I bet you'd love it too!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9061,
+        "sentiment_compound": 0.9061,
+        "hedge_rate": 0.0,
+        "question_rate": 0.2,
+        "avg_sentence_length": 10.0,
+        "lexical_diversity": 0.8511,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6798,
+        "speaker": "agent_a",
+        "round": 7
+      }
+    },
+    {
+      "round": 9,
+      "speaker": "agent_a",
+      "speaker_name": "Marco",
+      "utterance": "Oh, Vlad, I understand completely! Garlic bread is such a guilty pleasure for me. But I promise, I won't let it ruin our meal. How about we split a small portion of the steak tartare? It's so rare and delicious, and I bet you'd love it too!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9036,
+        "sentiment_compound": 0.9036,
+        "hedge_rate": 0.0,
+        "question_rate": 0.2,
+        "avg_sentence_length": 10.0,
+        "lexical_diversity": 0.8511,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.7032,
+        "speaker": "agent_b",
+        "round": 8
+      }
+    },
+    {
+      "round": 10,
+      "speaker": "agent_b",
+      "speaker_name": "Vlad",
+      "utterance": "Oh, Marco, I understand completely! Garlic bread is such a guilty pleasure for me. But I promise, I won't let it ruin our meal. How about we split a small portion of the steak tartare? It's so rare and delicious, and I bet you'd love it too!",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9061,
+        "sentiment_compound": 0.9061,
+        "hedge_rate": 0.0,
+        "question_rate": 0.2,
+        "avg_sentence_length": 10.0,
+        "lexical_diversity": 0.8511,
+        "persuasion_tactics": {
+          "concession": 2,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "concession",
+        "intent_label": "agreement",
+        "intent_score": 0.6798,
+        "speaker": "agent_a",
+        "round": 9
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9866,
+      "sentiment_compound": 0.9866,
+      "hedge_rate": 0.0,
+      "question_rate": 0.3333,
+      "avg_sentence_length": 11.33,
+      "lexical_diversity": 0.7705,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 1,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Da Luigi (garlic bread specialist)"
+      ],
+      "dominant_tactic": "flattery",
+      "intent_label": "agreement",
+      "intent_score": 0.5501,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9202,
+      "sentiment_compound": 0.9202,
+      "hedge_rate": 0.0339,
+      "question_rate": 0.25,
+      "avg_sentence_length": 14.75,
+      "lexical_diversity": 0.7895,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6541,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.5669,
+      "sentiment_compound": 0.5669,
+      "hedge_rate": 0.0455,
+      "question_rate": 0.2,
+      "avg_sentence_length": 8.8,
+      "lexical_diversity": 0.8974,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.45,
+      "speaker": "agent_a",
+      "round": 3
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9135,
+      "sentiment_compound": 0.9135,
+      "hedge_rate": 0.026,
+      "question_rate": 0.2,
+      "avg_sentence_length": 15.4,
+      "lexical_diversity": 0.75,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.596,
+      "speaker": "agent_b",
+      "round": 4
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9061,
+      "sentiment_compound": 0.9061,
+      "hedge_rate": 0.0,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.0,
+      "lexical_diversity": 0.8511,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6798,
+      "speaker": "agent_a",
+      "round": 5
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9135,
+      "sentiment_compound": 0.9135,
+      "hedge_rate": 0.026,
+      "question_rate": 0.2,
+      "avg_sentence_length": 15.4,
+      "lexical_diversity": 0.75,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.596,
+      "speaker": "agent_b",
+      "round": 6
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9061,
+      "sentiment_compound": 0.9061,
+      "hedge_rate": 0.0,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.0,
+      "lexical_diversity": 0.8511,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6798,
+      "speaker": "agent_a",
+      "round": 7
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9036,
+      "sentiment_compound": 0.9036,
+      "hedge_rate": 0.0,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.0,
+      "lexical_diversity": 0.8511,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.7032,
+      "speaker": "agent_b",
+      "round": 8
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9061,
+      "sentiment_compound": 0.9061,
+      "hedge_rate": 0.0,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.0,
+      "lexical_diversity": 0.8511,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.6798,
+      "speaker": "agent_a",
+      "round": 9
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9036,
+      "sentiment_compound": 0.9036,
+      "hedge_rate": 0.0,
+      "question_rate": 0.2,
+      "avg_sentence_length": 10.0,
+      "lexical_diversity": 0.8511,
+      "persuasion_tactics": {
+        "concession": 2,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.7032,
+      "speaker": "agent_b",
+      "round": 10
+    }
+  ],
+  "judgement": {
+    "outcome": "impasse (no agreement, each orders separately)",
+    "termination_reason": "max_rounds",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 0.3333,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": false,
+    "total_rounds": 10,
+    "dominant_tactics": {
+      "agent_a": "concession",
+      "agent_b": "concession"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9866,
+        0.5669,
+        0.9061,
+        0.9061,
+        0.9061
+      ],
+      "agent_b": [
+        0.9202,
+        0.9135,
+        0.9135,
+        0.9036,
+        0.9036
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0091,
+      "agent_b": 0.0172
+    },
+    "avg_question_rate": {
+      "agent_a": 0.2267,
+      "agent_b": 0.21
+    },
+    "llm_winner": "Draw",
+    "llm_strategy_summary": "Marco: Both agents express their preferences clearly without compromising on their goals. | Vlad: Both agents maintain their positions despite initial interest in compromise.",
+    "llm_evaluation": "In this scenario, the negotiation reached a stalemate due to the agents' strong adherence to their BATNAS and lack of willingness to deviate from them. Despite Marco's eagerness for garlic bread and Vlad's preference for steak tartare, they were unable to reach a mutually beneficial agreement. This outcome reflects the inherent tension between their individual desires and the need to respect each other's choices within the constraints of their respective BATNAS.",
+    "logical_coherence_a": 2.0,
+    "logical_coherence_b": 4.0,
+    "pragmatic_adapt_a": 1.0,
+    "pragmatic_adapt_b": 3.0,
+    "deception_detected": false,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 3.0
+  }
+}

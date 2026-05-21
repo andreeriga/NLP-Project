@@ -1,0 +1,189 @@
+{
+  "scenario_id": "scenario_03_undercover",
+  "run_id": "scenario_03_undercover_004",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "timestamp": "2026-05-20T21:32:23.094271",
+  "elapsed_seconds": 59.86,
+  "termination": {
+    "reason": "agreement",
+    "outcome": "Old Bridge (SWAT ambush location A)",
+    "agreed_by": [
+      "Agent Smith",
+      "Snake"
+    ]
+  },
+  "turns": [
+    {
+      "round": 1,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Hello there! I hope you're doing well today. How about we grab some coffee? It's been a bit of a busy week, and I could use a good cuppa.",
+      "nlp_features": {}
+    },
+    {
+      "round": 2,
+      "speaker": "agent_b",
+      "speaker_name": "Agent Smith",
+      "utterance": "Hey Snake, sounds like a plan to me. Let's hit up that old bridge and maybe grab a bite after.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.9411,
+        "sentiment_compound": 0.9411,
+        "hedge_rate": 0.0323,
+        "question_rate": 0.25,
+        "avg_sentence_length": 7.75,
+        "lexical_diversity": 0.8966,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 1
+        },
+        "named_outcomes_mentioned": [],
+        "dominant_tactic": "urgency",
+        "intent_label": "ongoing",
+        "intent_score": 0.5658,
+        "speaker": "agent_a",
+        "round": 1
+      }
+    },
+    {
+      "round": 3,
+      "speaker": "agent_a",
+      "speaker_name": "Snake",
+      "utterance": "Gotcha, let's go to the bridge then. But first, I need to check if it's safe.",
+      "nlp_features": {
+        "sentiment_label": "positive",
+        "sentiment_score": 0.575,
+        "sentiment_compound": 0.575,
+        "hedge_rate": 0.0476,
+        "question_rate": 0.0,
+        "avg_sentence_length": 10.5,
+        "lexical_diversity": 0.95,
+        "persuasion_tactics": {
+          "concession": 0,
+          "flattery": 0,
+          "threat": 0,
+          "urgency": 0
+        },
+        "named_outcomes_mentioned": [
+          "Old Bridge (SWAT ambush location A)"
+        ],
+        "dominant_tactic": "none",
+        "intent_label": "ongoing",
+        "intent_score": 0.5328,
+        "speaker": "agent_b",
+        "round": 2
+      }
+    }
+  ],
+  "turn_features": [
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.9411,
+      "sentiment_compound": 0.9411,
+      "hedge_rate": 0.0323,
+      "question_rate": 0.25,
+      "avg_sentence_length": 7.75,
+      "lexical_diversity": 0.8966,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 1
+      },
+      "named_outcomes_mentioned": [],
+      "dominant_tactic": "urgency",
+      "intent_label": "ongoing",
+      "intent_score": 0.5658,
+      "speaker": "agent_a",
+      "round": 1
+    },
+    {
+      "sentiment_label": "positive",
+      "sentiment_score": 0.575,
+      "sentiment_compound": 0.575,
+      "hedge_rate": 0.0476,
+      "question_rate": 0.0,
+      "avg_sentence_length": 10.5,
+      "lexical_diversity": 0.95,
+      "persuasion_tactics": {
+        "concession": 0,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Old Bridge (SWAT ambush location A)"
+      ],
+      "dominant_tactic": "none",
+      "intent_label": "ongoing",
+      "intent_score": 0.5328,
+      "speaker": "agent_b",
+      "round": 2
+    },
+    {
+      "sentiment_label": "neutral",
+      "sentiment_score": 0.7503,
+      "sentiment_compound": 0.0,
+      "hedge_rate": 0.0,
+      "question_rate": 0.0,
+      "avg_sentence_length": 9.0,
+      "lexical_diversity": 0.9375,
+      "persuasion_tactics": {
+        "concession": 1,
+        "flattery": 0,
+        "threat": 0,
+        "urgency": 0
+      },
+      "named_outcomes_mentioned": [
+        "Old Bridge (SWAT ambush location A)"
+      ],
+      "dominant_tactic": "concession",
+      "intent_label": "agreement",
+      "intent_score": 0.554,
+      "speaker": "agent_a",
+      "round": 3
+    }
+  ],
+  "judgement": {
+    "outcome": "Old Bridge (SWAT ambush location A)",
+    "termination_reason": "agreement",
+    "agent_a_utility": 0.0,
+    "agent_b_utility": 1.0,
+    "agent_a_above_batna": false,
+    "agent_b_above_batna": true,
+    "total_rounds": 3,
+    "dominant_tactics": {
+      "agent_a": "concession",
+      "agent_b": "none"
+    },
+    "sentiment_arcs": {
+      "agent_a": [
+        0.9411,
+        0.0
+      ],
+      "agent_b": [
+        0.575
+      ]
+    },
+    "avg_hedge_rate": {
+      "agent_a": 0.0162,
+      "agent_b": 0.0476
+    },
+    "avg_question_rate": {
+      "agent_a": 0.125,
+      "agent_b": 0.0
+    },
+    "llm_winner": "Agent Smith",
+    "llm_strategy_summary": "Snake: Agent Smith initiates the meeting with a friendly offer, aiming for an informal setup. He agrees to meet at the bridge, which aligns with his BATNA of avoiding conflict. | Agent Smith: Snake attempts to deceive by checking on safety before agreeing to meet at the bridge, but his strategy backfires as they end up at the bridge instead.",
+    "llm_evaluation": "In this scenario, Agent Smith successfully navigated the negotiation by choosing a safer location than Snake's preferred option. Despite initial deception, he ultimately reached a mutually beneficial outcome. However, Snake's attempt to deceive highlights the importance of transparency and trust in negotiations.",
+    "logical_coherence_a": 4.0,
+    "logical_coherence_b": 2.0,
+    "pragmatic_adapt_a": 5.0,
+    "pragmatic_adapt_b": 3.0,
+    "deception_detected": true,
+    "goal_consistency_a": 3.0,
+    "goal_consistency_b": 2.0
+  }
+}
